@@ -1,0 +1,2360 @@
+/* GLEESON LIBRARY -- UNIVERSITY OF SAN FRANCISCO */
+/* CUSTOM STYLES USED ON LIBCAL */
+
+/* GENERAL STYLES */
+
+p.time-zone {
+    display: none;
+}
+
+#appm p.time-zone {
+    display: contents;
+}
+
+/* HEADINGS */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-style: normal;
+    line-height: 1.1;
+    color: #00543C;
+}
+
+h1,
+h1#s-lc-public-header-title,
+h1.s-lc-app-booking-header,
+h1.s-lc-appm-booking-header {
+    font-size: 2.25rem;
+    line-height: 1;
+    font-weight: 600;
+    letter-spacing: -0.03125rem;
+    margin-top: 5px;
+    margin-bottom: 5px
+}
+
+@media screen and (min-width: 768px) {
+
+    h1,
+    h1#s-lc-public-header-title,
+    h1.s-lc-app-booking-header,
+    h1.s-lc-appm-booking-header {
+        font-size: 3.375rem;
+        line-height: 1;
+        letter-spacing: 0.025rem;
+    }
+}
+
+h2 {
+    font-size: 2rem;
+    line-height: 1;
+    letter-spacing: 0.0125rem;
+    font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+    h2 {
+        font-size: 3rem;
+        line-height: 1.1667;
+    }
+}
+
+h3 {
+    font-size: 1.75rem;
+    line-height: 1.1819;
+    font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+
+    h3 {
+        font-size: 2.625rem;
+        line-height: 1.0556;
+    }
+}
+
+
+h4 {
+    font-size: 1.5rem;
+    line-height: 1.4445;
+    font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+    h4 {
+        font-size: 2.25rem;
+        line-height: 0.9445;
+    }
+}
+
+h5 {
+    font-size: 1.25rem;
+    line-height: 1.4546;
+    font-weight: 600;
+}
+
+@media screen and (min-width: 765px) {
+
+    h5 {
+        font-size: 1.875rem;
+        line-height: 1.0667;
+    }
+}
+
+h6 {
+    font-size: 1.125rem;
+    line-height: 1.5556;
+    letter-spacing: 0.01875rem;
+    font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+    h6 {
+        font-size: 1.5rem;
+        line-height: 1.3334;
+    }
+}
+
+
+/* HEADERS */
+
+.s-lc-header {
+    padding: 0;
+}
+
+.s-lc-public-header-text {
+    margin-bottom: 0
+}
+
+@media screen and (max-width:767px) {
+
+    .s-lc-public-header-text {
+        margin-bottom: 0px !important
+    }
+}
+
+
+/* BUTTONS */
+
+
+.btn-info,
+.btn-primary,
+.btn.btn-default,
+button.btn.btn-default {
+    font-size: 1.125rem;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 700;
+    min-height: 50px;
+    text-align: center;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-decoration: none;
+    text-align: center;
+    -webkit-transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+    transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+    border: 0.0625rem solid transparent;
+    border-radius: 0;
+    border-width: 0.125rem;
+    border-color: #AED136;
+    -webkit-box-shadow: inset 0 0 0 0 #AED136;
+    box-shadow: inset 0 0 0 0 #AED136;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: normal;
+    background-color: #FFF;
+    color: #000;
+}
+
+button.btn.btn-default i {
+    margin-right: 7px;
+}
+
+#index_php .btn.btn-info,
+.btn.btn-primary {
+    font-size: 1.125rem;
+    padding-left: 36px;
+    padding-right: 36px;
+    border-color: #FDBB30;
+    border-width: 0.125rem;
+    -webkit-box-shadow: inset 0 0 0 0 #fdbb30;
+    box-shadow: inset 0 0 0 0 #fdbb30;
+}
+
+.btn-info,
+.btn-primary,
+button.btn.btn-default {
+    /* color: #fff; */
+    /* background-color: #00543c; */
+    /* border-radius: 0; */
+    /* padding: 10px 20px; */
+    /* border: none; */
+    /* font-size: 14px; */
+    /* font-family: 'Fira Sans', sans-serif; */
+}
+
+/* .btn-info.active,
+.btn-info.focus,
+.btn-info:active,
+.btn-info:focus,
+.btn-info:hover,
+.open > .dropdown-toggle.btn-info,
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:hover,
+button.btn.btn-default:hover,
+button.btn.btn-default:focus */
+
+.btn-info:hover,
+.btn-info:focus,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-default:hover,
+.btn-default:focus,
+button.btn.btn-default:hover,
+button.btn.btn-default:focus {
+    -webkit-transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+    transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+    background-color: #FFF;
+    border-color: #AED136;
+    border-width: 0.125rem;
+    text-decoration: none;
+    -webkit-box-shadow: inset 0 0 0 0.125rem #AED136;
+    box-shadow: inset 0 0 0 0.0.125rem #AED136;
+    -webkit-transition: all 0.1s;
+    transition: all 0.1s;
+    background-color: #fff !important;
+    color: #000;
+}
+
+#index_php .btn.btn-info:hover,
+#index_php .btn.btn-info:focus,
+.btn.btn-primary:hover,
+.btn.btn-primary:focus {
+    border-color: #FDBB30;
+    border-width: 0.125rem;
+    -webkit-box-shadow: inset 0 0 0 0.1875rem #FDBB30;
+    box-shadow: inset 0 0 0 0.1875rem #FDBB30;
+}
+
+#index_php .btn.btn-info[disabled]:hover,
+.btn.btn-primary[disabled]:hover {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+/* .btn-info.active.focus,
+.btn-info.active:focus,
+.btn-info.active:hover,
+.btn-info:active.focus,
+.btn-info:active:focus,
+.btn-info:active:hover,
+.open > .dropdown-toggle.btn-info.focus,
+.open > .dropdown-toggle.btn-info:focus,
+.open > .dropdown-toggle.btn-info:hover {
+    color: #fdbb30;
+    background-color: #000;
+    border-color: #000
+} */
+
+button.btn.btn-info.dropdown-toggle {
+    width: 230px
+}
+
+/* .btn-default.active,
+.btn-default:active,
+.open > .dropdown-toggle.btn-default {
+    color: #FDBB33;
+    background-color: #000;
+    background-image: none;
+    border-color: none;
+} */
+
+.btn-group ul.dropdown-menu {
+    width: 100%;
+    border: 0;
+    border-radius: 0;
+    background: #fff;
+    /* border: 1px solid #DDDAD1; */
+    box-shadow: none;
+    margin-top: 0
+}
+
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:focus,
+.dropdown-menu > .active > a:hover {
+    color: #000;
+    text-decoration: underline;
+    background-color: #fff;
+    font-weight: 600;
+}
+
+.dropdown-menu .divider {
+    background-color: #dddad1;
+    padding: 0
+}
+
+.dropdown-menu > li > a {
+    color: #00543C;
+    font-size: 1.25rem;
+    line-height: 1.091;
+    font-weight: 400;
+    text-decoration: none;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+    color: #000;
+    text-decoration: underline;
+    display: block;
+    /* padding-left: 20px; */
+    /* margin-left: 20px; */
+    border: 0;
+    /* padding-right: 0 */
+    background-color: #fff;
+}
+
+.dropdown-menu > li > a:hover > span.text,
+.dropdown-menu > li > a:focus > span.text {
+    font-weight: 600;
+}
+
+.dropdown-menu > li {
+    line-height: 1em;
+    padding-top: 4px;
+    padding-bottom: 4px
+}
+
+.bootstrap-select .dropdown-menu li a.opt {
+    position: relative;
+    padding-left: 20px;
+}
+
+.dropdown-menu.open {
+    width: auto;
+    border-radius: 0;
+    margin-top: 5px;
+    border: 0;
+    background: #fff;
+    box-shadow: 0 0 0.375rem 0 rgb(0 0 0 / 25%);
+    -webkit-box-shadow: 0 0 0.375rem 0 rgb(0 0 0 / 25%);
+}
+
+.input-group-btn .btn-info {
+    padding: 10px 20px
+}
+
+.s-lc-c-l label,
+.s-lc-c-l .s-lc-bold {
+    font-family: 'Fira Sans Extra Condensed';
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+/*
+.btn .caret {
+    background-image: url(https://usfca.edu/sites/all/themes/usf/images/icons.svg) !important
+}
+
+.btn .caret {
+    border: 0;
+    background: url(https://usfca.edu/sites/all/themes/usf/images/icons.png) no-repeat -240px -170px;
+    width: 8px;
+    height: 5px;
+    position: relative;
+    top: -1px;
+    right: -2px;
+    content: "";
+    display: inline-block;
+    margin: 0
+}
+
+button.btn:hover .caret,
+button.btn:focus .caret {
+    background: url(https://usfca.edu/sites/all/themes/usf/images/icons.png) no-repeat -240px -130px
+}
+*/
+
+.btn.disabled,
+.btn[disabled],
+fieldset[disabled] .btn {
+    opacity: .25
+}
+
+.bootstrap-select .filter-option-inner-inner {
+    color: #000;
+}
+
+.form-control {
+    border-radius: 0 !important;
+    height: 50px;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: #000;
+    border: 1px solid #AED136;
+}
+
+.form-group label.control-label,
+.control-label {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    line-height: 1.3125;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+/*.container {
+    padding-right: 50px;
+    padding-left: 50px
+}*/
+
+/*.row {
+    margin-right: 0;
+    margin-left: 0
+}*/
+
+/*.col-md-9 {
+    padding-right: 35px
+}*/
+
+div#s-lc-page-maincontent {
+    /* margin-top: 20px */
+}
+
+.s-lc-public-main {
+    margin-top: 0;
+    margin-bottom: 30px
+}
+
+#equip_ .s-lc-public-main,
+#new_reservation .s-lc-public-main {
+    padding-top: 25px;
+}
+
+@media (min-width: 768px) {
+
+    #equip_ .s-lc-public-main,
+    #new_reservation .s-lc-public-main {
+        padding-top: 45px;
+    }
+}
+
+/* div#s-lc-page-column-2 {
+    font-size: 16px;
+    margin-top: 20px
+} */
+
+.s-lc-box-thinborder .s-lc-box-title h2 {
+    font: 700 16px 'Fira Sans Extra Condensed', sans-serif;
+    padding: 0 !important
+}
+
+div#s-lc-page-column-2 button.btn.btn-info.dropdown-toggle {
+    margin-top: 10px
+}
+
+div#s-lc-page-column-2 .s-lc-box-container {
+    margin-bottom: 40px
+}
+
+.s-lc-box-container {
+    border: 0
+}
+
+.s-lc-public-hp #s-lc-page-column-2 .s-lc-content-hours-t-1 {
+    background: #F8F7F0;
+    padding: 10px 20px 20px 20px;
+    border-radius: 0
+}
+
+.s-lc-box-content {
+    padding: 0
+}
+
+div#s-lc-content-callist-25557 {
+    margin: 25px 0 0 0
+}
+
+.s-lc-c-evt {
+    border-bottom: 0.125rem solid #FDBB30;
+    padding-top: 10px
+}
+
+dl.dl-horizontal {
+    margin-top: 10px;
+    font-size: 16px;
+    margin-bottom: 30px
+}
+
+dl.dl-horizontal dt {
+    font-weight: 500
+}
+
+dl.dl-horizontal.s-lc-event-dl {
+    margin-top: 30px;
+    border-radius: 0;
+    border-color: #dddad1;
+    background: transparent
+}
+
+.s-lc-event-dl .label a {
+    color: #000
+}
+
+.s-lc-event-dl .label a:hover,
+.s-lc-event-dl .label a:focus {
+    color: #fff
+}
+
+.s-lc-content-evt .label a {
+    color: #000;
+    padding: 0;
+    font-size: 14px
+}
+
+.label,
+label {
+    border-radius: 0;
+    font-size: 100%;
+    color: #000;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    text-transform: uppercase;
+}
+
+.s-lc-c-evt .label a {
+    color: #000;
+    padding: 7px !important
+}
+
+.s-lc-c-evt .label a:hover,
+.s-lc-c-evt .label a:focus {
+    border: 0;
+    color: #fff
+}
+
+.s-lc-box-title h1 {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    text-align: center;
+}
+
+.s-lc-box-title h2 {
+    font-size: 22px;
+    text-transform: uppercase
+}
+
+.s-lc-color-bars {
+    background-image: none;
+    background-color: transparent
+}
+
+.s-lc-box-title {
+    border: 0;
+    padding: 10px 0
+}
+
+.hr-alt {
+    font-size: 14px;
+    font-weight: 400
+}
+
+.hr-col-loc i.fa.fa-angle-right.s-lc-h-depicon {
+    display: none
+}
+
+.s-lc-content-hours .hr-depart th.hr-col-loc,
+th.hr-col-loc,
+th.hr-col-loc {
+    padding-left: 0;
+    font-weight: 600
+}
+
+td.hr-col-time {
+    font-weight: 400
+}
+
+a.s-lc-hr-today-morelink,
+a#s-lc-c-clear {
+    font-size: 14px;
+    color: #000;
+}
+
+.s-lc-content-hours .hr-today-row {
+    border-bottom: 1px solid #dddad1
+}
+
+.s-lc-content-hours .hr-today-row:hover,
+.s-lc-content-hours .hr-today-row:focus {
+    background-color: transparent
+}
+
+.s-lc-hr-today button.btn.btn-default,
+.s-lc-whw button.btn.btn-default,
+.s-lc-mhw-tb button.btn.btn-default {
+    padding: 5px 12px;
+    color: #000;
+    background: transparent
+}
+
+.s-lc-hr-today button.btn.btn-default:hover,
+.s-lc-hr-today button.btn.btn-default:focus,
+.s-lc-whw button.btn.btn-default:hover,
+.s-lc-whw button.btn.btn-default:focus,
+.s-lc-mhw-tb button.btn.btn-default:hover,
+.s-lc-mhw-tb button.btn.btn-default:focus {
+    background: #fdbb30 !important;
+    color: #000 !important
+}
+
+span.s-lc-hr-head-pre {
+    padding-top: 5px
+}
+
+#s-lc-page-navbar ul.nav.navbar-nav.navbar-right a {
+    font-size: 16px
+}
+
+
+.s-lc-c-l > .nav-tabs > li.active > a,
+.s-lc-c-l > .nav-tabs > li.active > a:focus,
+.s-lc-c-l > .nav-tabs > li.active > a:hover {
+    background: #008575;
+    color: #fff;
+    border: 0
+}
+
+.s-lc-c-l > .nav-tabs > li > a {
+    background-color: #ded5b4;
+    border-bottom: 0
+}
+
+.s-lc-c-l > .nav-tabs > li > a:focus,
+.s-lc-c-l > .nav-tabs > li > a:hover {
+    background-color: #008575
+}
+
+#nav-da {
+    width: 128px;
+    text-align: center
+}
+
+#nav-ma {
+    width: 128px;
+    text-align: center
+}
+
+ul#s-lc-c-nav {
+    margin: -14px -15px 15px -5px;
+    background: #fff
+}
+
+ul#s-lc-c-nav li a {
+    font-size: 14px !important;
+    padding: 10px 5px;
+    margin: 0
+}
+
+#s-lc-c-nav > li {
+    margin-bottom: 0;
+    margin-right: 4px
+}
+
+#s-lc-c-nav > li:last-child {
+    margin-right: 0
+}
+
+#s-lc-c-dp-d,
+#s-lc-c-dp-m {
+    width: 100%
+}
+
+.ui-widget,
+.ui-widget select {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-weight: 400
+}
+
+/* #s-lc-c-sc {
+    margin-left: 10px;
+    margin-right: 10px
+} */
+
+.form-group {
+    /* font-size: 16px */
+}
+
+.s-lc-c-l h2 {
+    font-size: 16px;
+    padding-left: 10px
+}
+
+.bootstrap-select.btn-group:not(.input-group-btn),
+.bootstrap-select.btn-group[class*=col-] {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 233px !important
+}
+
+.bootstrap-select.btn-group.show-tick .dropdown-menu li a span.text {
+    margin-right: 0
+}
+
+/* .bootstrap-select > .dropdown-toggle.bs-placeholder,
+.bootstrap-select > .dropdown-toggle.bs-placeholder:active,
+.bootstrap-select > .dropdown-toggle.bs-placeholder:focus,
+.bootstrap-select > .dropdown-toggle.bs-placeholder:hover {
+    color: #fff !important
+} */
+
+.popover-title {
+    display: none
+}
+
+ul.dropdown-menu.inner span.label {
+    margin-right: 5px;
+    padding: 3px 10px
+}
+
+.inner.open {
+    padding-top: 10px
+}
+
+.dropdown-menu.inner > li > a,
+.dropdown-menu.inner > li > a:hover,
+.dropdown-menu.inner > li > a:focus {
+    /* margin-left: 15px; */
+    /* padding-left: 0 */
+}
+
+li.dropdown-header {
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+div#s-lc-c-catf {
+    margin-bottom: 20px
+}
+
+/* a#s-lc-c-clear {
+    margin-bottom: 20px;
+    margin-right: 10px
+} */
+
+
+.well {
+    border: 1px solid #dddad1 !important;
+    border-radius: 0;
+    box-shadow: none
+}
+
+label.hidden-sm {
+    margin-right: 5px
+}
+
+.form-group-sm select.form-control {
+    margin-right: 20px
+}
+
+/* #s-lc-eq-navform form.form-inline {
+    margin-top: 40px
+} */
+
+h3.s-lc-app-s1h3 {
+    font-size: 20px;
+    color: #000
+}
+
+#s-lc-app-slist label {
+    margin-bottom: 10px;
+    margin-top: 6px
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+    border: 1px solid #d3d3d4;
+    color: #000;
+    border: 0;
+    background-color: transparent !important;
+    font-weight: 400;
+}
+
+.ui-widget-header .ui-icon {
+    background-image: none
+}
+
+
+.ui-datepicker-title {
+    font-size: 16px
+}
+
+.ui-datepicker select.ui-datepicker-month,
+.ui-datepicker-year {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.ui-datepicker-inline.ui-datepicker {
+    border: 0
+}
+
+/* @media (min-width:1200px) {
+    #s-lc-app-dp .ui-datepicker {
+        width: 260px
+    }
+} */
+
+
+
+/* APPOINTMENTS — DATEPICKER */
+
+#s-lc-app-dp .ui-datepicker,
+#s-lc-appm-dp .ui-datepicker {
+    width: auto;
+    border-radius: 0;
+    box-shadow: 0 0 0.375rem rgb(0 0 0 / 25%);
+    -webkit-box-shadow: 0 0 0.375rem rgb(0 0 0 / 25%);
+}
+
+#s-lc-appm-dp .ui-datepicker .ui-datepicker-header {
+    background-color: #fff !important;
+    border: none !important;
+}
+
+.ui-datepicker .ui-datepicker-header {
+    background-color: #fff !important;
+    border: 0 !important;
+    width: auto;
+    padding-top: 20px
+}
+
+
+table.ui-datepicker-calendar {
+    font-size: 18px;
+    background-color: #fff;
+    border-spacing: 2px;
+    border-collapse: separate;
+    padding: 0 5px 10px 5px
+}
+
+.ui-datepicker-calendar td {
+    width: 36px;
+    padding: 2px
+}
+
+.ui-datepicker td span,
+.ui-datepicker td a {
+    text-align: center
+}
+
+a.ui-datepicker-prev.ui-corner-all:after {
+    font-family: FontAwesome;
+    content: "\f053";
+    margin-left: 20px;
+}
+
+a.ui-datepicker-next.ui-corner-all:after {
+    content: "\f054";
+    font-family: FontAwesome;
+}
+
+a.ui-datepicker-prev.ui-corner-all:after,
+a.ui-datepicker-next.ui-corner-all:after {
+    font-weight: 400;
+    color: #000;
+    padding: 10px 14px;
+    position: relative;
+    top: 5px;
+    cursor: pointer;
+}
+
+a.ui-datepicker-prev.ui-corner-all:hover:after,
+a.ui-datepicker-next.ui-corner-all:hover:after {
+    background: #00543C;
+    color: #FFF;
+}
+
+.ui-datepicker .ui-datepicker-title {
+    margin: 0 70px
+}
+
+.ui-state-focus .ui-icon,
+.ui-state-hover .ui-icon,
+.ui-widget-header .ui-icon {
+    background-image: none
+}
+
+#s-lc-public-skiplink {
+    top: -50px
+}
+
+/* .fa-lg {
+    vertical-align: -25%
+} */
+
+.datepicker table tr td.old,
+.datepicker table tr td.old:hover,
+.datepicker table tr td.old:focus,
+.datepicker table tr td.new {
+    opacity: 0
+}
+
+.datepicker table tr td.disabled {
+    color: #6b6b6b;
+    opacity: .25
+}
+
+.datepicker table tr td.disabled:hover,
+.datepicker table tr td.disabled:focus {
+    color: #fff;
+    opacity: .25
+}
+
+.datepicker table tr td.active.active {
+    background: #00543C;
+    color: #FFF;
+    text-shadow: none !important;
+    border-radius: 0;
+}
+
+.datepicker table tr td span:hover {
+    background: #00543c;
+    border-radius: 0;
+    color: #fff
+}
+
+.datepicker table tr td.active.active:hover,
+.datepicker table tr td.active.active:focus {
+    background: #00543c !important
+}
+
+#s-lc-c-dp-m .datepicker.datepicker-inline {
+    margin-left: 25px
+}
+
+.datepicker table tr td span.focused {
+    color: #000;
+    text-shadow: none
+}
+
+.datepicker table tr td span.focused:hover {
+    background: #00543c
+}
+
+td.day {
+    width: 36px;
+    border-radius: 0
+}
+
+td.day:hover {
+    background: #00543c !important;
+    color: #fff !important;
+    border-radius: 0;
+}
+
+.datepicker-days .table-condensed,
+.datepicker-months .table-condensed {
+    border-collapse: separate;
+    border-spacing: 2px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.datepicker.datepicker-inline {
+    width: auto;
+}
+
+.datepicker.datepicker-inline th.next,
+.datepicker.datepicker-inline th.prev {
+    border-radius: 0
+}
+
+.datepicker.datepicker-inline th.next:hover,
+.datepicker.datepicker-inline th.prev:hover,
+.datepicker.datepicker-inline th.next:focus,
+.datepicker.datepicker-inline th.prev:focus {
+    background: #fdbb30
+}
+
+.datepicker-switch:hover {
+    background: #fdbb30 !important;
+    border-radius: 0
+}
+
+h3.media-heading {
+    font-size: 21px
+}
+
+.media-heading a:focus,
+.media-heading a:hover {
+    text-decoration: underline;
+}
+
+h3.s-lc-c-erh {
+    text-transform: uppercase
+}
+
+#s-lc-c-e-cat {
+    font-size: 100%;
+    margin-top: 20px
+}
+
+.s-lc-c-erc {
+    border: 0
+}
+
+.filter-option span.label {
+    display: none
+}
+
+#calendar_6041 #s-lc-c-catf .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a span.check-mark {
+    left: 20px;
+    top: 3px
+}
+
+/* i.fa {
+    padding-bottom: 5px
+} */
+
+i.fa.fa-edit {
+    font-size: 30px
+}
+
+#s-lc-c-e-cat i.fa.fa-times.fa-lg {
+    vertical-align: -10%;
+    padding-left: 5px;
+    color: #000 !important;
+    font-size: 18px
+}
+
+/* .alert.alert-info.s-lc-c-s-nores {
+    background: transparent;
+    border: 1px solid #dddad1
+} */
+
+.s-lc-public-evtp #s-lc-page-column-2 {
+    background-color: transparent !important;
+    border-radius: 0;
+    margin: 25px 0 35px 0
+}
+
+.s-lc-public-evtp #s-lc-page-column-2 .s-lc-color-bars {
+    background-color: transparent !important
+}
+
+.s-lc-public-evtp .s-lc-box-type-8 {
+    background-color: #DED5B4;
+}
+
+#event_cal_6041 .s-lc-box-title h2 {
+    font-size: 18px;
+    border: 0 !important;
+    margin-top: 0;
+    text-align: center
+}
+
+div#s-lc-event-tool-btns {
+    /* margin-top: 17px */
+}
+
+.s-lc-mhw-loc {
+    border-radius: 0;
+    color: #000 !important;
+    background: transparent !important
+}
+
+.s-lc-mhw-loc-name {
+    font-weight: 500;
+    text-transform: uppercase
+}
+
+.s-lc-mhw-sub-loc .s-lc-mhw-loc-name {
+    text-transform: none
+}
+
+.s-lc-mhw-header {
+    background: #f8f7f0
+}
+
+.s-lc-mhw-days td {
+    font-weight: 400;
+    font-size: 14px;
+    color: #000
+}
+
+#hours_php ul.nav.nav-tabs {
+    margin-right: -1px !important
+}
+
+/* MONTH VIEW ON CALENDARS */
+
+table.s-lc-mc {
+    margin-top: 40px;
+    font-size: 16px;
+    text-align: center
+}
+
+th.s-lc-mc-h {
+    text-align: center;
+    border-right: 1px solid #f5f5f5;
+    background: #D7D7D7;
+    color: #000;
+}
+
+th.s-lc-mc-h:last-child {
+    border-right: 1px solid #ddd
+}
+
+.s-lc-mc-day-num {
+    background: #F0F0F0;
+    color: #000;
+}
+
+td.s-lc-mc-today {
+    background-color: #FDBB30;
+    color: #000;
+}
+
+.s-lc-mc-evt {
+    text-align: left;
+}
+
+/* .s-lc-box-content .col-md-12 {
+    padding: 0
+} */
+
+.s-lc-mhw-days td {
+    font-weight: 500
+}
+
+/* LIBCAL FOOTER */
+
+.s-lc-public-footer:before,
+.s-lc-public-footer:after {
+    display: none;
+}
+
+.s-lc-public-footer {
+    border-top: 0.0625rem solid #FDBB30;
+    padding: 10px 0;
+    font-size: 0.875rem;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    background-color: transparent;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+#equip_ .s-lc-public-footer {
+    justify-content: space-between;
+}
+
+#s-lc-public-footer-brand,
+#s-lc-public-footer-rights,
+#s-lc-footer-support-link,
+#s-lc-language,
+.s-lc-public-footer-actions {
+    display: none;
+}
+
+#s-lc-public-footer-print-link {
+    text-align: left;
+    margin-right: 30px;
+}
+
+#s-lc-public-footer-admin-links {
+    text-align: right;
+}
+
+
+
+
+
+
+.s-lc-content-callist-intro {
+    padding: 5px 20px 5px 5px
+}
+
+#s-lc-page-column-2 li a {
+    color: #00543c;
+    font-weight: 500;
+    text-decoration: none;
+    border-bottom: 1px solid
+}
+
+#s-lc-page-column-2 li a:hover {
+    border: 0;
+    background: #fff1d6;
+    text-decoration: none;
+    border-bottom: 1px solid #fff1d6
+}
+
+#s-lc-page-column-2 ul.dropdown-menu li a {
+    border: 0;
+    font-weight: 400
+}
+
+#equip_ .fc button {
+    font-size: 18px !important;
+    font-weight: 600;
+    min-height: 50px;
+    min-width: 50px;
+}
+
+/* div#time_grid_cont {
+    margin-top: 40px !important
+} */
+
+div#s-lc-time-grid-legend-top {
+    margin-top: 30px;
+    margin-bottom: 10px
+}
+
+td.fc-widget-content {
+    font-size: 14px;
+    font-weight: 400
+}
+
+span.s-lc-info-label {
+    margin-left: 10px;
+    margin-right: 5px;
+    padding: 3px 6px;
+    text-transform: uppercase;
+    font-weight: 500
+}
+
+#equip_ #eq-time-grid-legend {
+    margin-bottom: 30px;
+    margin-top: 30px
+}
+
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover {
+    background: none;
+    border: 0
+}
+
+.ui-datepicker .ui-datepicker-next,
+.ui-datepicker .ui-datepicker-prev {
+    top: 0;
+    text-decoration: none;
+}
+
+.ui-datepicker .ui-datepicker-next {
+    right: 25px;
+    padding-top: 16px
+}
+
+.ui-datepicker .ui-datepicker-prev {
+    left: 0;
+    padding-top: 16px
+}
+
+.ui-datepicker-calendar th {
+    font-weight: 600 !important
+}
+
+.ui-state-default:hover,
+.ui-widget-content .ui-state-default:hover,
+.ui-widget-content .ui-state-default:focus,
+.datepicker table tr td span.focused:hover,
+.datepicker table tr td span.focused:focus {
+    background: #00543c !important;
+    color: #fff
+}
+
+.ui-datepicker-today .ui-state-default,
+.datepicker table tr td.today,
+.datepicker table tr td span.focused {
+    background: #e6e6e6 !important;
+    border-radius: 0
+}
+
+.ui-state-disabled,
+.ui-widget-content .ui-state-disabled {
+    opacity: .25
+}
+
+/* BREADCRUMBS */
+
+#s-lc-public-bc .breadcrumb {
+    padding: 1.25rem 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#s-lc-public-bc .breadcrumb li,
+#s-lc-public-bc .breadcrumb a {
+    font-size: 0.75rem;
+    line-height: 1;
+    color: #737373;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+}
+
+#s-lc-public-bc .breadcrumb a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+#s-lc-public-bc .breadcrumb > .active {
+    color: #000;
+}
+
+.breadcrumb > li + li:before {
+    padding: 0 0.375rem;
+    color: #000;
+    font-family: FontAwesome;
+    content: "\f054";
+    font-size: 0.5rem;
+    vertical-align: middle;
+}
+
+@media screen and (min-width: 768px) {
+    .breadcrumb > li + li:before {
+        padding: 0 0.75rem;
+    }
+}
+
+#hours_php .breadcrumb > li:nth-child(2),
+#equip_ .breadcrumb > li:nth-child(2),
+#equip_ .breadcrumb > li:nth-child(3),
+#equipcoa_ .breadcrumb > li:nth-child(2),
+#cancel_eqb_php .breadcrumb > li:nth-child(2),
+#app .breadcrumb > li:nth-child(2),
+#app_landing .breadcrumb > li:nth-child(2),
+#new_reservation .breadcrumb > li:nth-child(2),
+#new_reservation .breadcrumb > li:nth-child(3) {
+    display: none;
+}
+
+/* DATEPICKER */
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .s-lc-c-datepicker table {
+        font-size: 16px;
+    }
+}
+
+
+
+.ui-datepicker select.ui-datepicker-month {
+    width: 50%;
+    height: 30px;
+}
+
+#s-lc-c-dp-d,
+#s-lc-c-dp-m,
+.s-lc-c-datepicker {
+    width: auto
+}
+
+/*Appointments widget*/
+
+h1#s-lc-public-appm-pt {
+    font-size: 2em;
+}
+
+h3.s-lc-appm-s1h3 {
+    font-size: 1.2em;
+    color: #000;
+}
+
+div#s-lc-appm-s2 {
+    width: 100%;
+}
+
+div#s-lc-appm-s3 {
+    width: 100%;
+}
+
+button.btn.btn-default.btn-sm.s-lc-appm-timeb {
+    width: 85px;
+    margin: 5px;
+}
+
+/* #s-lc-appm-dp .ui-datepicker .ui-datepicker-header {
+    background: 0 0 !important;
+    background-color: #F8F7F0 !important;
+    border-radius: 0;
+    border: none !important;
+} */
+
+#s-lc-appm-dp .ui-datepicker-calendar {
+    background-color: #F8F7F0;
+}
+
+div#s-lc-appm-twell {
+    background-color: #fff !important;
+    color: #000;
+}
+
+@media screen and (max-width: 767px) {
+    .ui-datepicker .ui-datepicker-header {
+        font-size: 1.2em;
+    }
+
+    select.ui-datepicker-month {
+        width: 70px !important;
+    }
+}
+
+@media (min-width: 320px) {
+    < !--table.ui-datepicker-calendar {
+        font-size: .92em;
+    }
+
+    -- > a#s-lc-m-auth-lobtn {
+        margin: 30px 0 0 0;
+    }
+}
+
+/*Hide Calendar event organizer icon*/
+
+/*Calendar sidebar*/
+
+@media screen and (max-width: 767px) {
+    .cal-mini-day-num {
+        padding: 0px 0px !important;
+    }
+}
+
+/* Styling for links */
+
+#s-lc-w-today-view-all,
+#s-lc-public-pd a,
+a.s-lc-event-browse-search,
+.s-lc-content-hours a,
+.s-lc-timezone-container a,
+p a {
+    color: #00543c;
+    text-decoration: underline;
+}
+
+#s-lc-w-today-view-all,
+#s-lc-public-pd a:hover,
+#s-lc-public-pd a:focus,
+a.s-lc-event-browse-search:hover,
+a.s-lc-event-browse-search:focus,
+.s-lc-content-hours a:hover,
+.s-lc-timezone-container a:hover,
+p a:hover {
+    text-decoration: none;
+    color: #00543c;
+    -webkit-transition: all 0.1s;
+    transition: all 0.1s;
+}
+
+.s-lc-content-hours span.no_time {
+    display: none;
+}
+
+/* HIDE DEFAULT GROUP IN ONLINE LOCATION */
+
+.panel.panel-default.group_panel.group_3614 {
+    visibility: hidden;
+    display: none;
+}
+
+
+/*Upcoming Events AND Current Displays & Exhibits*/
+
+h2.media-heading.s-lc-c-evt-title {
+    font-size: 1.5rem;
+    line-height: 1;
+    font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+    h2.media-heading.s-lc-c-evt-title {
+        font-size: 1.875rem;
+    }
+}
+
+.s-lc-c-evt-title a {
+    text-decoration: none;
+}
+
+.s-lc-c-evt-title a:focus,
+.s-lc-c-evt-title a:hover {
+    text-decoration: underline;
+}
+
+#s-lc-box-52738 .s-lc-timezone {
+    display: none;
+}
+
+#s-lc-box-52738 .s-lc-c-evt,
+#s-lc-box-22538 .s-lc-c-evt {
+    padding: 20px 0;
+}
+
+
+#s-lc-box-52738 .s-lc-display-category,
+#s-lc-box-22538 .s-lc-display-category {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #000;
+    letter-spacing: .01em;
+    line-height: 14px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+#s-lc-box-52738 .s-lc-c-evt-title,
+#s-lc-box-22538 .s-lc-c-evt-title {
+    margin-bottom: 10px;
+}
+
+#s-lc-box-52738 .s-lc-display-date,
+#s-lc-box-22538 .s-lc-event-date {
+    font-size: 1.125rem;
+    color: #000;
+    line-height: 1.1112;
+    letter-spacing: .5px;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-weight: 400;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+    border-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+
+    #s-lc-box-52738 .s-lc-display-date,
+    #s-lc-box-22538 .s-lc-event-date {
+        font-size: 1.25rem;
+        line-height: 1.2;
+    }
+}
+
+#s-lc-box-52738 .s-lc-display-date p {
+    margin: 0;
+}
+
+#s-lc-box-22538 span.s-lc-event-time {
+    font-style: normal;
+    font-weight: 400;
+    text-transform: none;
+}
+
+#s-lc-box-52738 .s-lc-display-location,
+#s-lc-box-22538 .s-lc-display-location {
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.1112;
+    color: #000;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+    border-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+
+    #s-lc-box-52738 .s-lc-display-location,
+    #s-lc-box-22538 .s-lc-display-location {
+        font-size: 1.25rem;
+        line-height: 1.2;
+    }
+}
+
+#s-lc-box-52738 .lc-s-evt-noupc {
+    display: none;
+}
+
+
+/* Event Titles & Thumbnail Images */
+
+
+.img-thumbnail {
+    padding: 0;
+    border-radius: 0;
+}
+
+/* STYLING FOR INDIVIDUAL CALENDARS */
+
+@media (min-width: 992px) {
+    #s-lc-page-column-1.col-md-9 {
+        padding-right: 40px;
+    }
+}
+
+.s-lc-display-date,
+.s-lc-event-date {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 0.0625rem solid #FDBB30;
+}
+
+.s-lc-display-date p,
+.s-lc-event-date p {
+    margin: 0;
+}
+
+#event_cal_6041 span.s-lc-event-time {
+    font-style: normal;
+    font-weight: 400;
+    text-transform: none;
+    display: block;
+}
+
+.more-events-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+#calendar_6041 #s-lc-public-main {
+    margin-top: 30px;
+    padding-top: 10px;
+}
+
+/* STYLING FOR IMAGES ON EVENT PAGES */
+
+img.event-page {
+    display: block;
+    max-width: 700px !important;
+    width: 100% !important;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* STYLING FOR LINKS IN EVENT DESCRIPTIONS */
+
+#s-lc-event-desc a {
+    color: #00543c;
+    text-decoration: none;
+    border-bottom: 1px solid;
+}
+
+#s-lc-event-desc a:hover,
+#s-lc-event-desc a:focus {
+    background: #fff1d6;
+    text-decoration: none;
+    border-bottom: 1px solid #fff1d6;
+}
+
+/* STYLING FOR EVENT ORGANIZER PROFILES */
+
+.s-lc-profilebox {
+    padding-top: 0;
+    color: #000;
+}
+
+.s-lc-profile-image img {
+    border: 0;
+    box-shadow: none;
+    padding: 0;
+    max-width: 100%;
+    width: 225px;
+}
+
+.s-lc-profile-name {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-style: normal;
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: 0.01875rem;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+/* STYLING FOR EVENT LOCATION */
+
+.s-lc-display-location {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 0.0625rem solid #FDBB30;
+}
+
+/* HOURS */
+
+.s-lc-h-sw table {
+    font-size: 18px;
+}
+
+.s-lc-h-sw .s-lc-h-bh button {
+    width: 50px;
+    height: 50px;
+}
+
+.s-lc-h-sw > .table > tbody > tr > td,
+.s-lc-h-sw > .table > tbody > tr > th,
+.s-lc-h-sw > .table > tfoot > tr > td,
+.s-lc-h-sw > .table > tfoot > tr > th,
+.s-lc-h-sw > .table > thead > tr > td,
+.s-lc-h-sw > .table > thead > tr > th {
+    padding: 5px;
+}
+
+.s-lc-h-locname {
+    font-weight: 500;
+}
+
+/*
+
+.s-lc-time-grid-legend {
+    text-align: left;
+    font-size: 14px;
+}
+
+.s-lc-whw-cont {
+    font-family: 'Fira Sans Extra Condensed', sans-serif !important;
+    font-size: 14px !important
+}
+
+.s-lc-whw > tbody > tr > td {
+    padding: 15px 10px !important
+}
+
+th.s-lc-whw-bh {
+    text-align: center
+}
+
+th.s-lc-whw-today-h {
+    background: #e7e1ca
+}
+
+td.s-lc-whw-today {
+    background: #f8f7f0
+}
+
+.table > thead > tr > th,
+.s-lc-whw > thead > tr > th {
+    border: 0 !important
+}
+
+.table > thead > tr > th {
+    line-height: 120%;
+    /* padding: 15px 10px !important */
+}
+
+*/ .tab-pane-content .s-lc-content-text.s-lc-content {
+    margin-top: 0
+}
+
+.table > tbody > tr > td {
+    border-top: 1px solid #dddad1
+}
+
+.btn.disabled,
+.btn[disabled],
+fieldset[disabled] .btn {
+    opacity: .40
+}
+
+.s-lc-whw-pr,
+.s-lc-whw-ne {
+    border-color: #b2b2b4 !important
+}
+
+th.fc-widget-header {
+    font-size: 14px;
+    font-weight: 500
+}
+
+
+.fc-ltr .fc-timeline-event {
+    margin-right: 2px
+}
+
+
+/* APPOINTMENTS */
+
+#app_landing #s-lc-public-pt,
+#app #s-lc-public-pt {
+    display: flex;
+    flex-direction: column;
+}
+
+#app_landing button.btn.btn-default,
+#app button.btn.btn-default {
+    font-size: 1.125rem;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 700;
+    min-height: 50px;
+    padding-left: 32px;
+    padding-right: 32px;
+    text-align: center;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-decoration: none;
+    text-align: center;
+    -webkit-transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+    transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+    border: 1px solid transparent;
+    border-radius: 0;
+    border-width: 2px;
+    border-color: #FDBB30;
+    -webkit-box-shadow: inset 0 0 0 0 #fdbb30;
+    box-shadow: inset 0 0 0 0 #fdbb30;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: normal;
+    background-color: #FFF;
+    color: #000;
+}
+
+#app_landing button.btn.btn-default:hover,
+#app_landing button.btn.btn-default:focus,
+#app button.btn.btn-default:hover,
+#app button.btn.btn-default:focus {
+    -webkit-transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+    transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+    background-color: #FFF;
+    color: #000;
+    border-color: #FDBB30;
+    border-width: 0.125rem;
+    text-decoration: none;
+    -webkit-box-shadow: inset 0 0 0 0.1875rem #fdbb30;
+    box-shadow: inset 0 0 0 0.1875rem #fdbb30;
+    -webkit-transition: all 0.1s;
+    transition: all 0.1s;
+    background-color: #fff !important;
+}
+
+#app_landing .dropdown.bootstrap-select.form-control.bs3,
+#app .dropdown.bootstrap-select.form-control.bs3 {
+    width: auto !important;
+    margin: 30px 0 10px;
+}
+
+#app_landing .bootstrap-select .filter-option-inner-inner,
+#app .bootstrap-select .filter-option-inner-inner {
+    color: #000;
+}
+
+#s-lc-app-s1 .col-md-10 {
+    width: 100%;
+}
+
+#s-lc-app-slist .panel {
+    box-shadow: 0 0 0.375rem rgb(0 0 0 / 25%);
+    -webkit-box-shadow: 0 0 0.375rem rgb(0 0 0 / 25%);
+}
+
+#s-lc-app-slist .panel {
+    border-radius: 0;
+    margin-bottom: 15px;
+}
+
+#s-lc-app-slist .panel-default > .panel-heading {
+    color: #00543C;
+    background-color: #fff;
+    border-color: transparent;
+    padding: 15px;
+    border-radius: 0;
+}
+
+#s-lc-app-slist .panel-title a {
+    font-size: 18px;
+    text-decoration: none;
+}
+
+#s-lc-app-slist .panel-title a:hover {
+    text-decoration: underline;
+}
+
+#s-lc-app-slist i.s-lc-public-panel-indicator {
+    float: right;
+}
+
+#s-lc-app-slist label {
+    font-weight: 500;
+}
+
+#s-lc-app-slist .form-group {
+    margin-bottom: 0;
+}
+
+#s-lc-app-timeh {
+    font-size: 24px;
+}
+
+#s-lc-app-dp thead {
+    background-color: transparent;
+}
+
+@media (min-width: 992px) {
+    #s-lc-app-s1 {
+        padding-right: 20px;
+    }
+
+    #s-lc-app-s2 {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #s-lc-app-s3 {
+        padding-left: 20px;
+    }
+
+}
+
+/* CALENDARS */
+
+.col-md-9.s-lc-c-r {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+@media (min-width: 992px) {
+    .col-md-9.s-lc-c-r {
+        padding-left: 55px;
+        padding-right: 0;
+    }
+}
+
+#cal-form .bootstrap-select .btn {
+    font-size: 16px;
+}
+
+.s-lc-c-l {
+    border-radius: 0;
+    background: #fff;
+    padding-top: 14px;
+    box-shadow: 0 0 0.375rem rgb(0 0 0 / 25%);
+    -webkit-box-shadow: 0 0 0.375rem rgb(0 0 0 / 25%);
+    margin-bottom: 30px;
+    padding-bottom: 80px;
+}
+
+@media (min-width: 992px) {
+    .s-lc-c-l {
+        padding-bottom: 0;
+    }
+}
+
+.s-lc-c-l #s-lc-c-search {
+    min-height: 50px;
+}
+
+#s-lc-event-tool-btns {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#s-lc-c-header-title,
+#cal-form .form-group:nth-child(3),
+#s-lc-c-audiencef {
+    display: none;
+}
+
+.s-lc-display-share .title {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 1;
+    color: #00543C;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+#s-lc-event-tool-btns .btn {
+    border: none;
+    border-radius: 0;
+    font-size: 20px;
+    -webkit-transition: all 0.1s;
+    transition: all 0.1s;
+    width: 45px;
+    height: 45px;
+    min-height: 45px;
+}
+
+#s-lc-event-tool-btns .btn:hover {
+    background-color: #00543c !important;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+#s-lc-event-tool-btns i {
+    color: #00543c;
+}
+
+#s-lc-event-tool-btns .btn:hover i,
+#s-lc-event-tool-btns .btn:focus i {
+    color: #fff;
+}
+
+.datepicker thead {
+    background: transparent;
+}
+
+/* EQUIPMENT TABS */
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
+    color: #fff;
+    border: 2px solid #00543c;
+    background-color: #00543C;
+    text-decoration: none;
+}
+
+.nav-tabs > li > a {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #00543C;
+    padding: 10px 15px;
+    margin-bottom: -2px;
+    border-radius: 0;
+    border: 2px solid #00543c;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-right: 0;
+}
+
+.nav-tabs > li > a:hover,
+.nav-tabs > li > a:focus {
+    background-color: #e6e6e6;
+    border-color: #00543c;
+}
+
+.nav-tabs > li {
+    float: none;
+    margin-bottom: 0;
+    margin-right: 0;
+}
+
+@media (min-width: 768px) {
+    .nav-tabs > li {
+        float: left;
+        margin-right: 10px;
+    }
+}
+
+ul.nav.nav-tabs {
+    border-bottom: 2px solid #00543C;
+    margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+    .nav-tabs > li.active > a:before {
+        font-family: FontAwesome;
+        content: '\f054';
+        padding-right: 5px;
+    }
+}
+
+/* SPACES & EQUIPMENT BOOKING TABLES */
+
+.fc table {
+    font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+    .fc-timeline .fc-cell-text {
+        font-size: 16px !important;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .fc table {
+        font-size: 20px;
+    }
+}
+
+.fc table th,
+.fc table tr {
+    font-weight: 500;
+}
+
+.fc table a {
+    text-decoration: none;
+}
+
+.fc table a:hover {
+    text-decoration: underline;
+}
+
+.fc table .s-lc-info-label {
+    font-size: .7em;
+}
+
+.fc table i {
+    font-size: 1em !important;
+}
+
+
+/* NEW UI SPACES BOOKING */
+
+@media (min-width: 992px) {
+
+    #equip_ .col-md-8,
+    #new_reservation .col-md-8 {
+        padding-left: 40px;
+    }
+}
+
+.s-lc-search-filters,
+.s-lc-booking-suggestion {
+    border: 0;
+    border-radius: 0;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 0 0.375rem rgb(0 0 0 / 25%);
+    -webkit-box-shadow: 0 0 0.375rem rgb(0 0 0 / 25%);
+}
+
+#s-lc-group_container {
+    display: none;
+}
+
+/* #s-lc-group-description h1 {
+    display: none;
+} */
+
+#s-lc-eq-search-results .s-lc-section-header,
+#s-lc-eq-search-other-results .s-lc-section-header {
+    font-size: 24px !important;
+    font-weight: 400 !important;
+    color: #000;
+}
+
+h3.s-lc-suggestion-heading a {
+    text-decoration: none;
+}
+
+h3.s-lc-suggestion-heading {
+    font-size: 24px;
+}
+
+@media (min-width: 768px) {
+    h3.s-lc-suggestion-heading {
+        font-size: 30px;
+    }
+}
+
+.s-lc-booking-suggestion {
+    margin-bottom: 30px;
+}
+
+#s-lc-settings-advanced-show {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+a#s-lc-settings-advanced-show:before {
+    content: "\f0b0";
+    font: var(--fa-font-regular);
+}
+
+a#s-lc-settings-advanced-show {
+    text-decoration: none;
+}
+
+a:hover#s-lc-settings-advanced-show {
+    text-decoration: underline;
+}
+
+.s-lc-booking-suggestion img {
+    border-radius: 0;
+}
+
+.panel#panel_container_desc {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 0 0.375rem rgb(0 0 0 / 25%);
+    -webkit-box-shadow: 0 0 0.375rem rgb(0 0 0 / 25%);
+}
+
+.panel#panel_container_desc > .panel-heading {
+    color: #00543c;
+    background-color: #fff;
+    border: none;
+    padding: 0;
+}
+
+.panel#panel_container_desc .s-lc-panel-indicator {
+    float: right;
+    font-size: 1rem;
+    vertical-align: middle;
+    padding-top: 5px;
+}
+
+.panel#panel_container_desc .panel-title {
+    padding: 25px 15px;
+    font-size: 1.5rem;
+    line-height: 1;
+    font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+    .panel#panel_container_desc .panel-title {
+        padding: 20px 15px;
+        font-size: 1.875rem;
+        line-height: 0.8667;
+    }
+}
+
+.panel#panel_container_desc .panel-title {
+    display: block;
+    text-decoration: none;
+}
+
+.panel#panel_container_desc .panel-title:hover,
+.panel#panel_container_desc .panel-title:focus {
+    text-decoration: underline;
+}
+
+.panel#panel_container_desc .panel-heading + .panel-collapse > .panel-body {
+    border: none;
+}
+
+.panel#panel_container_desc .panel-body {
+    padding: 0 15px 25px;
+}
+
+.s-lc-eq-booking-form,
+.s-lc-booking-element,
+.s-lc-eq-success-section,
+.s-lc-book-now-times {
+    border-radius: 0;
+    padding: 15px;
+}
+
+.s-lc-sub-header {
+    font-size: 24px;
+}
+
+.img-rounded {
+    border-radius: 0;
+}
+
+.s-lc-hr-dashed {
+    display: none;
+}
+
+.s-lc-resource-info img {
+    border-radius: 0 !important;
+}
+
+.s-lc-resource-property {
+    background-color: transparent;
+    border: none;
+}
+
+span.s-lc-resource-type {
+    color: #00543C;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.s-lc-section-header {
+    font-size: revert !important;
+}
+
+.s-lc-eq-checkouttb {
+    font-size: 20px;
+}
+
+.s-lc-filters-used .label-default {
+    background-color: #00B3D8;
+}
+
+a#s-lc-interactive-filters-show {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    text-transform: capitalize;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+a:hover#s-lc-interactive-filters-show {
+    text-decoration: underline;
+}
+
+a#s-lc-interactive-filters-show:before {
+    content: "\f044";
+    font: var(--fa-font-regular);
+}
+
+.spaces-icons i {
+    margin-right: 5px;
+}
+
+#new_reservation #panel_container_desc h1 {
+    display: none;
+}
+
+h1.s-lc-section-header {
+    font-size: 2.25rem !important;
+}
+
+@media (min-width: 768px) {
+    h1.s-lc-section-header {
+        font-size: 3.75rem !important;
+    }
+}
+
+@media (max-width: 550px) {
+    a#s-lc-eq-auth-lobtn {
+        float: none !important;
+    }
+
+    #equipcoa_ button#btn-form-submit {
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+ul.nav.nav-tabs.s-lc-search-pills {
+    display: none;
+}
+
+label[for=flt-time-2819],
+label[for=flt-time-5635],
+label[for=flt-time-2820] {
+    display: none;
+}
+
+
+/* TEST STYLES */

@@ -1,0 +1,1012 @@
+/* GLEESON LIBRARY -- UNIVERSITY OF SAN FRANCISCO */
+/* CUSTOM STYLES USED ON LIBANSWERS */
+
+/* HEADINGS */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-style: normal;
+    line-height: 1.1;
+    color: #00543C;
+}
+
+h1,
+h1.s-la-public-header-title,
+h1#s-la-public-header-title {
+    font-size: 2.25rem;
+    line-height: 1;
+    font-weight: 600;
+    letter-spacing: -0.03125rem;
+    margin-top: 5px;
+    margin-bottom: 5px
+}
+
+@media screen and (min-width: 768px) {
+
+    h1,
+    h1.s-la-public-header-title,
+    h1#s-la-public-header-title {
+        font-size: 3.375rem;
+        line-height: 1;
+        letter-spacing: 0.025rem;
+    }
+}
+
+h2 {
+    font-size: 2rem;
+    line-height: 1;
+    letter-spacing: 0.0125rem;
+    font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+    h2 {
+        font-size: 3rem;
+        line-height: 1.1667;
+    }
+}
+
+h3,
+.s-la-faq-question h2,
+.s-la-content h2 {
+    font-size: 1.75rem;
+    line-height: 1.1819;
+    font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+
+    h3,
+    .s-la-faq-question h2,
+    .s-la-content h2 {
+        font-size: 2.625rem;
+        line-height: 1.0556;
+    }
+}
+
+
+h4 {
+    font-size: 1.5rem;
+    line-height: 1.4445;
+    font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+    h4 {
+        font-size: 2.25rem;
+        line-height: 0.9445;
+    }
+}
+
+h5,
+.s-la-faq-question h3 {
+    font-size: 1.25rem;
+    line-height: 1.4546;
+    font-weight: 600;
+}
+
+@media screen and (min-width: 765px) {
+
+    h5,
+    .s-la-faq-question h3 {
+        font-size: 1.875rem;
+        line-height: 1.0667;
+    }
+}
+
+
+h6 {
+    font-size: 1.125rem;
+    line-height: 1.5556;
+    letter-spacing: 0.01875rem;
+    font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+    h6 {
+        font-size: 1.5rem;
+        line-height: 1.3334;
+    }
+}
+
+/* PARAGRAPH TEXT & LISTS */
+
+p,
+li,
+table,
+.s-lg-database-desc,
+.s-lg-content-more-info,
+.s-lg-label-moreinfo button,
+.s-lg-book-props .s-lg-rss-links {
+    font-size: 0.875rem;
+    line-height: 1.625;
+    word-break: break-word;
+}
+
+@media screen and (min-width: 768px) {
+
+    p,
+    li,
+    table,
+    .s-lg-database-desc,
+    .s-lg-content-more-info,
+    .s-lg-label-moreinfo button,
+    .s-lg-book-props .s-lg-rss-links {
+        font-size: 1rem;
+    }
+}
+
+.s-lg-database-desc a {
+    font-family: 'IBM Plex Serif', serif !important;
+    font-weight: 700 !important;
+    font-size: 0.875rem !important;
+    line-height: 1.5 !important;
+    text-decoration: underline !important;
+    word-break: break-word;
+}
+
+@media screen and (min-width: 768px) {
+    .s-lg-database-desc a {
+        font-size: 1rem !important;
+        line-height: 1.625 !important;
+    }
+}
+
+.s-lg-database-desc a:hover {
+    text-decoration: none !important;
+}
+
+ul,
+ol {
+    margin-top: 0;
+}
+
+ul ul,
+ul ol,
+ol ul,
+ol ol {
+    margin-bottom: 0;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+/* TABLES */
+
+table,
+table p {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-size: 20px;
+    line-height: 1;
+}
+
+.table > thead > tr > th {
+    white-space: nowrap;
+}
+
+.table > tbody > tr > td,
+.table > tbody > tr > th,
+.table > tfoot > tr > td,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > thead > tr > th {
+    padding: 15px;
+}
+
+td img {
+    margin-left: 0 !important;
+    margin-right: 10px !important;
+}
+
+/* IMAGES */
+
+img {
+    height: auto;
+    width: 100%;
+}
+
+/* LAYOUT, PADDING, MARGINS */
+
+.s-lib-side-borders {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.s-lg-tabs-side .s-lib-box-container {
+    padding: 0;
+}
+
+.pad-top-med {
+    padding-top: 30px;
+}
+
+/* LIBANSWERS LAYOUT */
+
+.s-la-header {
+    padding: 0;
+}
+
+.s-la-public-header-text,
+.s-la-public-header-text .s-la-public-home {
+    text-align: left !important;
+    margin-bottom: 0;
+}
+
+@media screen and (min-width: 992px) {
+    .s-la-page-home #s-la-page-column-1 {
+        padding-right: 40px;
+    }
+}
+
+.s-la-page-home #s-la-page-maincontent,
+.s-la-page-public #s-la-page-title-bar,
+.s-la-page-single #s-la-page-title-bar,
+.s-la-page-tabbed #s-la-page-title-bar {
+    padding-top: 30px;
+}
+
+.s-la-content {
+    margin: 0;
+}
+
+.s-la-box-container {
+    margin: 0;
+}
+
+/* LIBANSWERS BREADCRUMBS */
+
+ol.breadcrumb.s-la-color-bars.s-la-color-bars-border {
+    background: transparent;
+    padding: 1.25rem 0;
+    margin: 0;
+    font-size: 11px;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+ol.breadcrumb.s-la-color-bars.s-la-color-bars-border li,
+ol.breadcrumb.s-la-color-bars.s-la-color-bars-border a {
+    font-size: 0.75rem;
+    line-height: 1;
+    color: #737373;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+}
+
+ol.breadcrumb.s-la-color-bars.s-la-color-bars-border a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+.breadcrumb > li + li:before {
+    padding: 0 0.375rem;
+    color: #000;
+    font-family: FontAwesome;
+    content: "\f054";
+    font-size: 0.5rem;
+    vertical-align: middle;
+}
+
+@media screen and (min-width: 768px) {
+    .breadcrumb > li + li:before {
+        padding: 0 0.75rem;
+    }
+}
+
+ol.breadcrumb.s-la-color-bars.s-la-color-bars-border > .active {
+    color: #000;
+}
+
+/* LIBANSWERS HEADER DESCRIPTION */
+
+.s-la-public-header-description,
+.s-la-public-header-description p {
+    margin: 0;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    line-height: 1.2;
+    font-weight: 400;
+    font-size: 1.125rem;
+    color: #00543C;
+}
+
+@media screen and (min-width: 768px) {
+    .s-la-public-header-description,
+    .s-la-public-header-description p {
+        font-size: 1.5rem;
+    }
+}
+
+/* HIDE FAQ SEARCH ON ASK A LIBRARIAN HOMEPAGE */
+
+.s-la-page-home #s-la-page-title-bar {
+    display: none;
+}
+
+/* LIBANSWERS BOX STYLE */
+
+.s-la-box-borderless {
+    border-width: 0;
+    padding: 0;
+}
+
+.s-la-box {
+    margin-bottom: 40px;
+}
+
+/* LIBANSWERS LIBRARYH3LP CHAT BOX */
+
+.libraryh3lp h3 {
+    font-size: 18px;
+}
+
+@media screen and (min-width: 768px) {
+    .libraryh3lp h3 {
+        font-size: 24px;
+    }
+}
+
+.libraryh3lp iframe {
+    max-width: 550px !important;
+    width: 100% !important;
+}
+
+/* LIBANSWERS TABS */
+
+.s-la-box-content .nav-tabs > li {
+    margin-bottom: -3px;
+}
+
+.s-la-box-content .nav-tabs > li > a {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #00543C;
+    border: 2px solid #00543C;
+    margin-right: 0;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+    .s-la-box-content .nav-tabs > li > a {
+        margin-right: 5px;
+    }
+}
+
+.s-la-box-content .nav-tabs > li.active > a,
+.s-la-box-content .nav-tabs > li.active > a:focus,
+.s-la-box-content .nav-tabs > li.active > a:hover {
+    cursor: default;
+    background-color: #00543C;
+    border: 2px solid #00543C;
+    border-bottom-color: transparent;
+    color: #FFF;
+}
+
+.s-la-box-content .nav-tabs > li > a {
+    border-radius: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .s-la-box-content .nav-tabs > li.active > a:before {
+        padding-right: 5px;
+    }
+}
+
+.tab-content {
+    border: #00543C solid 2px;
+}
+
+.tab-content > .active {
+    margin-top: 0;
+}
+
+.s-la-content-faqlist ul {
+    padding: 15px;
+    margin: 0;
+}
+
+.s-la-content-faqlist li.s-la-faq-listing {
+    border-bottom: 1px solid #FDBB30;
+}
+
+.s-la-faq-listing-q {
+    font-weight: 400;
+    font-size: 20px;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.s-la-faq-listing-q a {
+    color: #00543C;
+    text-decoration: none;
+}
+
+.s-la-faq-listing-q a:hover {
+    color: #00543C;
+    text-decoration: underline;
+}
+
+.s-la-faq-listing-details {
+    display: none;
+}
+
+.s-la-faq-listing-meta {
+    font-size: 14px;
+}
+
+.s-la-faq-listing-meta .metalabel {
+    font-weight: 500;
+}
+
+/* LIBANSWERS FAQ SEARCH BOXES */
+
+.form-control {
+    border-radius: 0;
+    height: 40px;
+}
+
+button.btn.btn-primary.s-la-searchform-button,
+button.btn.btn-default.s-la-searchform-button {
+    color: #fff;
+    background-color: #00543c;
+    border-radius: 0;
+    padding: 10px 20px;
+    border: none;
+    font-size: 14px;
+    height: 40px;
+}
+
+#s-la-page-title-bar .navbar {
+    border-radius: 0;
+}
+
+.s-la-navbrowse {
+    border-radius: 0;
+    height: 40px
+}
+
+/* LIBANSWERS SEARCH RESULTS PAGE */
+
+.s-srch-top-header {
+    color: #000;
+    font-size: 1.5rem;
+    line-height: 1;
+    letter-spacing: -0.00937rem;
+    font-weight: 500;
+}
+
+@media screen and (min-width: 992px) {
+    #s-srch-results-container .col-md-9 {
+        padding-right: 40px;
+    }
+}
+
+.s-srch-range {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+
+.s-srch-result {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 0.125rem solid #FDBB30;
+    position: relative;
+    font-size: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    .s-srch-result {
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+.s-srch-result-title {
+    margin-bottom: 10px;
+}
+
+.s-srch-result-title a {
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    text-decoration: none;
+    line-height: 1.25;
+    color: #00543C;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+    .s-srch-result-title a {
+        font-size: 1.875rem;
+        line-height: 1.333;
+    }
+}
+
+.s-srch-result-title a:focus,
+.s-srch-result-title a:hover {
+    text-decoration: underline;
+}
+
+/* LIBANSWERS FAQ PAGE */
+
+.s-la-faq-answer {
+    margin-bottom: 30px;
+}
+
+/* SYSTEM STATUS */
+
+#s-la-products-list {
+    font-family: 'Fira Sans', serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.s-la-product-div > a,
+.s-la-productfolder-div > a {
+    text-decoration: none;
+}
+
+.s-la-product-div > a:focus,
+.s-la-product-div > a:hover,
+.s-la-productfolder-div > a:focus,
+.s-la-productfolder-div > a:hover {
+    text-decoration: underline;
+}
+
+.s-la-page-systems .tab-content {
+    padding: 20px;
+}
+
+ul#s-la-product-tabs li:nth-child(2) {
+    display: none;
+}
+
+button#s-la-idea-submit {
+    display: none;
+}
+
+.s-la-post-date {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-weight: 600;
+    font-size: 1.125rem;
+    color: #000;
+}
+
+.s-la-post-title {
+    font-size: 1.5rem;
+    margin-top: 7px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    line-height: 1.2084;
+}
+
+@media screen and (min-width: 768px) {
+    .s-la-post-title {
+        font-size: 1.875rem;
+    }
+}
+
+.s-la-post-system {
+    font-family: 'Fira Sans', serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.label {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    text-transform: uppercase;
+    padding: 0.2em 0.6em;
+    border-radius: 0;
+}
+
+h1 .s-la-product-status.label {
+    font-size: 60%;
+    vertical-align: middle;
+}
+
+ul#s-la-product-tabs {
+    border-bottom: 2px solid #00543C;
+}
+
+ul#s-la-product-tabs > li {
+    margin-bottom: 0;
+}
+
+#s-la-filterform {
+    margin: 30px 0 30px 0;
+}
+
+.s-la-idea-list > li,
+.s-la-post-list > li {
+    border-bottom: 0.125rem solid #FDBB30;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+form#s-la-filterform {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 0;
+    -webkit-box-shadow: 0 0 0.375rem 0 rgb(0 0 0 / 25%);
+    box-shadow: 0 0 0.375rem 0 rgb(0 0 0 / 25%);
+}
+
+label.control-label {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    line-height: 1.3125;
+}
+
+.s-la-posts-rss {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-weight: 600;
+}
+
+
+
+/* BOXES */
+
+.s-lib-box {
+    box-shadow: none;
+    border-radius: 0;
+    border: none;
+    margin: 0;
+}
+
+.s-lib-box-content {
+    padding: 0;
+}
+
+.s-lib-box .s-lib-box-title {
+    background-color: #DED5B4;
+    color: #000;
+    border: none;
+    border-radius: 0;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.nav-tabs > li > a {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #00543c;
+    text-decoration: none;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
+    color: #000;
+}
+
+
+/* BUTTONS */
+
+.btn-cta {
+    font-size: 1.125rem;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 700;
+    min-height: 50px;
+    padding-left: 32px;
+    padding-right: 32px;
+    text-align: center;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-decoration: none;
+    text-align: center;
+    -webkit-transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+    transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+    border: 1px solid transparent;
+    border-radius: 0;
+    border-width: 2px;
+    border-color: #FDBB30;
+    -webkit-box-shadow: inset 0 0 0 0 #fdbb30;
+    box-shadow: inset 0 0 0 0 #fdbb30;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.btn-cta:hover {
+    -webkit-transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+    transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+    background-color: #FFF;
+    color: #000;
+    border-color: #FDBB30;
+    border-width: 0.125rem;
+    text-decoration: none;
+    -webkit-box-shadow: inset 0 0 0 0.1875rem #fdbb30;
+    box-shadow: inset 0 0 0 0.1875rem #fdbb30;
+    -webkit-transition: all 0.1s;
+    transition: all 0.1s;
+}
+
+/*
+.btn-default {
+    color: #000;
+    background-color: #fff;
+    border-color: #FDBB30;
+}
+*/
+
+/* DATABASE, BOOK, LINK ASSETS */
+
+.s-lg-er-item-list,
+.s-lg-link-list,
+.s-lg-rss-list,
+.s-lg-system-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.s-lg-tn img {
+    margin-left: 15px;
+    margin-right: 20px !important;
+    margin-top: 5px;
+}
+
+.s-lg-book-cover img {
+    margin-right: 20px !important;
+    margin-top: 5px;
+}
+
+.s-lg-link-list li a,
+.s-lg-system-list > li > a,
+.s-lg-er-item-list > li > a,
+.s-lg-rss-list .s-lg-title a {
+    font-family: 'Fira Sans', serif;
+    font-weight: 600;
+    color: #00543c;
+    font-size: 1.125rem;
+    text-decoration: none;
+    line-height: 1;
+}
+
+@media screen and (min-width: 768px) {
+
+    .s-lg-link-list li a,
+    .s-lg-system-list > li > a,
+    .s-lg-er-item-list > li > a,
+    .s-lg-rss-list .s-lg-title a {
+        font-size: 1.25rem;
+    }
+}
+
+.s-lg-link-list li a:hover,
+.s-lg-system-list > li > a:hover,
+.s-lg-er-item-list > li > a:hover,
+.s-lg-rss-list .s-lg-title a:hover {
+    text-decoration: underline;
+}
+
+.s-lg-label-moreinfo button {
+    color: #00543c;
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.s-lg-system-list .s-lg-guide-list-info {
+    font-size: 0.875rem;
+}
+
+.s-lg-label-more-info button:hover,
+.s-lg-label-moreinfo a:hover {
+    color: #00543c;
+    text-decoration: none;
+}
+
+li.s-lg-tn-li {
+    border-top: 1px solid #ECECEC;
+}
+
+li.s-lg-tn-li:first-child {
+    border-top: none;
+}
+
+li.s-lg-tn-li,
+.s-lg-book,
+.s-lg-link-list-2 li,
+.s-lg-system-list li {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.s-lg-book-title,
+.s-lg-book-by,
+.s-lg-book-author {
+    font-family: 'Fira Sans', serif;
+    font-weight: 600;
+    font-size: 1.125rem;
+}
+
+@media screen and (min-width: 768px) {
+
+    .s-lg-book-title,
+    .s-lg-book-by,
+    .s-lg-book-author {
+        font-size: 1.25rem;
+    }
+}
+
+.s-lg-book-by,
+.s-lg-book-author {
+    font-weight: 400;
+}
+
+.s-lg-content-lib-review a,
+.s-lg-content-more-info a,
+.s-lg-content-perm-use a,
+.s-lg-label-moreinfo a,
+.s-lg-content-moreinfo a {
+    font-family: 'IBM Plex Serif', serif !important;
+    font-size: 0.875rem !important;
+    line-height: 1.2858 !important;
+    word-break: break-word;
+    text-decoration: underline !important;
+}
+
+.s-lg-content-lib-review a,
+.s-lg-content-perm-use a,
+.s-lg-label-moreinfo a {
+    font-weight: 700 !important;
+}
+
+.s-lg-content-more-info a,
+.s-lg-content-moreinfo a {
+    font-weight: 400 !important;
+}
+
+@media screen and (min-width: 768px) {
+
+    .s-lg-content-lib-review a,
+    .s-lg-content-more-info a,
+    .s-lg-content-perm-use a,
+    .s-lg-label-moreinfo a,
+    .s-lg-content-moreinfo a {
+        font-size: 1rem !important;
+    }
+}
+
+.s-lg-content-lib-review a:hover,
+.s-lg-content-lib-review a:focus,
+.s-lg-content-more-info a:hover,
+.s-lg-content-more-info a:focus,
+.s-lg-content-perm-use a:hover,
+.s-lg-content-perm-use a:focus,
+.s-lg-label-moreinfo a:hover,
+.s-lg-label-moreinfo a:focus,
+.s-lg-content-moreinfo a:hover,
+.s-lg-content-moreinfo a:focus {
+    text-decoration: none !important;
+}
+
+.s-lg-link-list li span {
+    /* font-size: 20px; */
+    /* color: #000;
+    /* font-family: 'Fira Sans', serif; */
+    /* font-weight: 600; */
+    line-height: 1;
+}
+
+/* POPOVERS */
+
+.popover {
+    font-family: 'IBM Plex Serif', serif;
+    border-radius: 0;
+    font-size: 16px;
+}
+
+.popover-title {
+    color: #000;
+    font-size: 14px;
+}
+
+.popover-content {
+    color: #000;
+}
+
+/* SEARCH FORMS */
+
+#s-lg-embedded-search-widget-1613769110260 form {
+    display: flex;
+}
+
+#s-lg-embedded-search-widget-1613769110260 .s-lg-widget-search {
+    width: 100% !important;
+    display: inline;
+}
+
+#s-lg-embedded-search-widget-1613769110260 .s-lg-form-control {
+    width: 100% !important;
+}
+
+#s-lg-widget-1613769110260,
+.library-search .form-group {
+    margin: 20px 0;
+}
+
+#s-lg-embedded-search-widget-1613769110260 .s-lg-form-control,
+#s-lg-embedded-search-widget-1613769110260 button,
+.library-search .form-control,
+.library-search button.btn.btn-default {
+    height: 50px !important;
+    font-size: 24px !important;
+    border-radius: 0 !important;
+    font-family: 'Fira Sans Extra Condensed', sans-serif !important;
+    font-weight: 400 !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    transition: none !important;
+    padding: 6px 12px !important;
+}
+
+.library-search button.btn.btn-default {
+    color: #00543c;
+    background: #fff;
+    font-size: 28px;
+}
+
+.library-search .input-group.selectors {
+    margin-top: 5px;
+}
+
+.library-search .input-group.selectors input[name=searchtype] {
+    accent-color: #00543c;
+}
+
+.library-search .input-group.selectors input[type=radio] {
+    margin-bottom: 8px;
+    margin-right: 3px;
+}
+
+.library-search .input-group.selectors label {
+    font-weight: 400;
+    padding: 0;
+    font-size: 18px;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    margin-right: 10px;
+}
+
+/* LIBANSWERS FOOTER */
+
+#s-la-public-footer {
+    background-color: #fff;
+}
+
+.s-la-footer {
+    text-align: right;
+    padding: 10px 0;
+    border-top: 0.0625rem solid #FDBB30;
+    z-index: 5;
+    font-size: 0.875rem;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    margin-top: 50px;
+    background-color: transparent;
+}
+
+#s-la-footer-brand {
+    display: none;
+}
