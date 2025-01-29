@@ -178,7 +178,7 @@ button.btn.btn-default {
 }
 
 button.btn.btn-default i {
-    margin-right: 7px;
+    /* margin-right: 7px; */
 }
 
 #index_php .btn.btn-info,
@@ -1508,26 +1508,61 @@ h2.media-heading.s-lc-c-evt-title {
     display: none;
 }
 
-#s-lc-box-52738 .s-lc-c-evt,
-#s-lc-box-22538 .s-lc-c-evt {
+.s-lc-c-evt {
     padding: 20px 0;
+    display: flex;
+    flex-direction: column;
 }
 
+.s-lc-c-evt .media-body {
+    width: auto;
+}
 
-#s-lc-box-52738 .s-lc-display-category,
-#s-lc-box-22538 .s-lc-display-category {
+.s-lc-c-evt .media-right {
+    order: 1;
+    margin-top: 15px;
+}
+
+img.media-object.img-thumbnail.s-lc-c-evt-fi {
+    border: 0;
+    width: 100% !important;
+    max-width: unset !important;
+    max-height: unset !important;
+    margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .s-lc-c-evt {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .s-lc-c-evt .media-body {
+        width: 60%;
+    }
+
+    .s-lc-c-evt .media-right {
+        width: 40%;
+        padding-left: 30px;
+        margin-top: 0;
+    }
+
+    img.media-object.img-thumbnail.s-lc-c-evt-fi {
+        padding: 3px;
+    }
+}
+
+.s-lc-display-category {
     font-family: 'Fira Sans Extra Condensed', sans-serif;
     font-size: 14px;
     font-weight: 700;
     color: #000;
     letter-spacing: .01em;
-    line-height: 14px;
     text-transform: uppercase;
     margin-bottom: 5px;
 }
 
-#s-lc-box-52738 .s-lc-c-evt-title,
-#s-lc-box-22538 .s-lc-c-evt-title {
+.s-lc-c-evt-title {
     margin-bottom: 10px;
 }
 
@@ -1539,9 +1574,6 @@ h2.media-heading.s-lc-c-evt-title {
     letter-spacing: .5px;
     font-family: 'Fira Sans Extra Condensed', sans-serif;
     font-weight: 400;
-    padding-bottom: 10px;
-    margin-bottom: 0;
-    border-bottom: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -1569,9 +1601,6 @@ h2.media-heading.s-lc-c-evt-title {
     font-weight: 400;
     line-height: 1.1112;
     color: #000;
-    padding-bottom: 10px;
-    margin-bottom: 0;
-    border-bottom: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -1608,8 +1637,14 @@ h2.media-heading.s-lc-c-evt-title {
 .s-lc-event-date {
     font-family: 'Fira Sans Extra Condensed', sans-serif;
     font-size: 20px;
-    font-weight: 600;
     color: #000;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.s-lc-public-evtp .s-lc-display-date,
+.s-lc-public-evtp .s-lc-event-date {
+    font-weight: 600;
     text-transform: uppercase;
     margin-bottom: 20px;
     padding-bottom: 20px;
@@ -1638,6 +1673,25 @@ h2.media-heading.s-lc-c-evt-title {
     padding-top: 10px;
 }
 
+.btn-group .btn.s-lc-nav-tab + .btn.s-lc-nav-tab {
+    margin-left: -2px;
+}
+
+@media (min-width: 768px) {
+    .s-lc-mc-r-single-day {
+        min-height: 70px;
+        height: 70px;
+    }
+}
+
+button.btn.btn-default.btn-small.s-lc-nav-tab.s-lc-nav-card, button.btn.btn-default.btn-small.s-lc-nav-tab.s-lc-nav-weekly {
+    display: none;
+}
+
+.s-lc-mc-evt {
+    font-size: 16px;
+}
+
 /* STYLING FOR IMAGES ON EVENT PAGES */
 
 img.event-page {
@@ -1649,21 +1703,6 @@ img.event-page {
     margin-right: auto;
     margin-top: 40px;
     margin-bottom: 40px;
-}
-
-/* STYLING FOR LINKS IN EVENT DESCRIPTIONS */
-
-#s-lc-event-desc a {
-    color: #00543c;
-    text-decoration: none;
-    border-bottom: 1px solid;
-}
-
-#s-lc-event-desc a:hover,
-#s-lc-event-desc a:focus {
-    background: #fff1d6;
-    text-decoration: none;
-    border-bottom: 1px solid #fff1d6;
 }
 
 /* STYLING FOR EVENT ORGANIZER PROFILES */
@@ -1698,6 +1737,11 @@ img.event-page {
 .s-lc-display-location {
     font-family: 'Fira Sans Extra Condensed', sans-serif;
     font-size: 20px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.s-lc-public-evtp .s-lc-display-location {
     font-weight: 600;
     margin-bottom: 20px;
     padding-bottom: 20px;

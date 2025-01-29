@@ -1,0 +1,220 @@
+/* LIBCAL EVENT PAGE TEMPLATES */
+/* https://libcal.usfca.edu/admin/look-and-feel/event#s-lc-tab-event */
+
+/* EVENT TITLE — FULL WIDTH */
+
+<h1 class="media-heading">{{title}}</h1>
+
+/* EVENT DESCRIPTION TEMPLATE — LEFT COLUMN / 75% */
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="media-body">
+            {{#featured_image}}
+                <img src="{{featured_image}}" class="event-page" alt="{{title}}">
+            {{/featured_image}}
+            <div id="s-lc-event-desc">
+                <big>{{{description}}}</big>
+            </div>
+            <div class="media-body">
+                {{#lg_id}}
+                    <p>
+                        <strong>Related LibGuide: </strong>
+                        <a href="{{lg_url}}">{{{lg_name}}}</a>
+                    </p>
+                {{/lg_id}}
+                <dl class="dl-horizontal s-lc-event-dl">
+                    {{#series_datetimes}}
+                        <dt>Dates & Times:</dt>
+                        <dd>{{{series_datetimes}}}</dd>
+                    {{/series_datetimes}}
+
+                    {{#single_event}}
+                        <dt>{{textDate}}:</dt>
+                        <dd>{{date}}
+                            {{#future_dates.0}}
+                                <i class="fa fa-calendar pad-left-med" aria-hidden="true"></i>
+                                <a href="#" onclick="jQuery('#future_{{id}}').toggle(); return false;"> Show more dates</a>
+                                <p id="future_{{id}}" style="display:none">
+                                    {{#future_dates}}
+                                        <a href="/event/{{event_id}}">{{start}}</a><br>
+                                    {{/future_dates}}
+                                </p>
+                            {{/future_dates.0}}
+                        </dd>
+                        <dt>{{textTime}}:</dt>
+                        <dd>{{start}} {{#end}} - {{end}}{{/end}}</dd>
+                    {{/single_event}}
+
+                    {{#multi_day_event}}
+                        <dt>{{textFrom}}:</dt>
+                        <dd>
+                            {{^all_day}}{{start}},{{/all_day}}
+                            {{date}}
+                        </dd>
+                        <dt>{{textTo}}:</dt>
+                        <dd>
+                            {{^all_day}}{{end}},{{/all_day}}
+                            {{multi_day_end_date}}
+                        </dd>
+                    {{/multi_day_event}}
+
+                    {{#timezone}}
+                        <dt class="s-lc-timezone-container">Time Zone:</dt>
+                        <dd class="s-lc-timezone-container">
+                            {{timezone}}
+                            {{#is_reloadable}}(<a href="#" class="s-lc-timezone-change">change</a>){{/is_reloadable}}
+                        </dd>
+                    {{/timezone}}
+
+                    {{#location}}
+                        <dt>{{textLocation}}:</dt>
+                        <dd>{{#locations}}{{name}}{{#map}} (<a href="{{map}}" target="_blank" title="Open map for {{name}}">Map <i class="fa fa-external-link" aria-hidden="true"></i></a>){{/map}}{{^last}}, {{/last}}{{/locations}}</dd>
+                    {{/location}}
+
+                    {{#campus}}
+                        <dt>{{textCampus}}:</dt>
+                        <dd>{{campus}}</dd>
+                    {{/campus}}
+
+                    {{#online_event}}{{^in_person_registration}}
+                            <dt>Online:</dt>
+                            <dd>
+                                This is an online event.
+                                {{#seats}}Event URL will be sent via registration email.{{/seats}}
+                            </dd>
+                            {{^seats}}{{#online_external_url}}
+                                    <dt>Event URL:</dt>
+                                    <dd>
+                                        <a href="{{online_external_url}}">{{online_external_url}}</a>
+                                    </dd>
+                                {{/online_external_url}}{{/seats}}
+                        {{/in_person_registration}}{{/online_event}}
+
+                    {{#audiences.0}}
+                        <dt>{{textAudience}}:</dt>
+                        <dd>{{#audiences}}
+                                <span class="s-lc-event-category-color" style="background-color:{{color}}"> </span>
+                                <span class="s-lc-event-category-link">
+                                    <a href="{{calendar_url}}&t=g&cal%5B%5D={{calendar_id}}&audience%5B%5D={{id}}">{{name}}</a>
+                                </span>  
+                            {{/audiences}}
+                        </dd>
+                    {{/audiences.0}}
+
+                    {{#categories_arr.0}}
+                        <dt>{{textCategories}}:</dt>
+                        <dd>
+                            {{#categories_arr}}
+                                <span class="s-lc-event-category-color" style="background-color:{{color}}"> </span>
+                                <span class="s-lc-event-category-link">
+                                    <a href="{{calendar_url}}&t=g&d=0000-00-00&cal%5B%5D={{calendar_id}}&ct%5B%5D={{cat_id}}">{{name}}</a>
+                                </span>  
+                            {{/categories_arr}}
+                        </dd>
+                    {{/categories_arr.0}}
+
+                    {{#registration_cost}}
+                        <dt>{{textEventCost}}:</dt>
+                        <dd>{{registration_cost}}</dd>
+                    {{/registration_cost}}
+
+                    {{#file_attachment.0}}
+                        <dt>Attachments: </dt>
+                        <dd>
+                            <ul id="s-lc-event-attachment-list" class="list-unstyled">
+                                {{#file_attachment}}
+                                    <li>
+                                        <a href="{{link}}" target="_blank" download="{{filename}}">{{filename}}</a>
+                                    </li>
+                                {{/file_attachment}}
+                            </ul>
+                        </dd>
+                    {{/file_attachment.0}}
+                </dl>
+            </div>
+        </div>
+    </div>
+</div>
+{{#registration_form}}
+    {{{registration_form}}}
+{{/registration_form}}
+{{#reg_expired}}
+    <div class="row margin-top-med">
+        <div class="col-md-2 s-lc-event-label"></div>
+        <div class="col-md-5">
+            <div class="alert alert-warning">{{reg_expired}}</div>
+        </div>
+    </div>
+{{/reg_expired}}
+{{#reg_expired_series}}
+    <div class="row margin-top-med">
+        <div class="col-md-2 s-lc-event-label"></div>
+        <div class="col-md-5">
+            <div class="alert alert-warning">{{reg_expired_series}}</div>
+        </div>
+    </div>
+{{/reg_expired_series}}
+{{#reg_early}}
+    <div class="row margin-top-med">
+        <div class="col-md-2 s-lc-event-label"></div>
+        <div class="col-md-5">
+            <div class="alert alert-info">{{reg_early}}</div>
+        </div>
+    </div>
+{{/reg_early}}
+{{^custom_page}}
+    <div class="row margin-top-xlg">
+        <div class="col-md-12 more-events-wrapper">
+            <a class="btn btn-cta" href="{{calendar_url}}" class="s-lc-event-browse-search">More Events</a>
+        </div>
+    </div>
+{{/custom_page}}
+
+<script>
+    jQuery("body").addClass("s-lc-public-evtp");
+
+</script>
+
+/* EVENT DESCRIPTION TEMPLATE — RIGHT COLUMN / 25% */
+
+{{#single_event}}
+    <div class="s-lc-display-date">{{date}} <span class="s-lc-event-time">{{start}} – {{end}}</span></div>
+{{/single_event}}
+
+{{#more_info}}
+    <div class="s-lc-display-date">{{{more_info}}}</div>
+{{/more_info}}
+
+{{#location}}
+    <div class="s-lc-display-location">{{location}}</div>
+{{/location}}
+
+{{#online_event}}
+    <div class="s-lc-display-location">
+        {{textOnlineEvent}}
+    </div>
+{{/online_event}}
+
+<div class="s-lc-display-share">
+    <div class="title">Share</div>
+    <div class="btn-group" id="s-lc-event-tool-btns">
+        <a class="btn btn-default" href="#" onclick="window.print(); return false;" data-container="body" data-toggle="tooltip" title="Print page" id="s-lc-event-b-p"><i class="fa fa-print fa-lg"></i><span class="sr-only">Print the page</span></a>
+        <a class="btn btn-default" href="{{ical}}" data-container="body" data-toggle="tooltip" title="Add to Calendar using iCal" id="s-lc-event-b-c"><i class="fa fa-calendar fa-lg"></i><span class="sr-only">Add to a Calendar using iCal</span></a>
+        <a class="btn btn-default" href="{{facebook_url}}" data-container="body" data-toggle="tooltip" title="Share on Facebook" id="s-lc-event-b-f" target="_blank">
+            <i class="fa fa-facebook-square fa-lg"></i>
+            <span class="sr-only">Share page on Facebook</span>
+            <span class="sr-only">This link opens in a new window</span>
+        </a>
+        <a class="btn btn-default" href="{{google_url}}" data-container="body" data-toggle="tooltip" title="Add to Google Calendar" id="s-lc-event-b-g" target="_blank">
+            <i class="fa fa-google-plus-square fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">Add to Google Calendar</span>
+            <span class="sr-only">This link opens in a new window</span>
+        </a>
+        <a class="btn btn-default" href="{{twitter_url}}" data-container="body" data-toggle="tooltip" title="Share on Twitter" id="s-lc-event-b-t" target="_blank">
+            <i class="fa fa-twitter-square fa-lg"></i>
+            <span class="sr-only">Share page on Twitter</span>
+            <span class="sr-only">This link opens in a new window</span>
+        </a>
+    </div>
+</div>

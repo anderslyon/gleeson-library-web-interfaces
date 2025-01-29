@@ -1,0 +1,95 @@
+/* LIBCAL HOMEPAGE TEMPLATES */
+/* https://libcal.usfca.edu/admin/look-and-feel/homepage#s-lc-tab-homepage */
+
+/* UPCOMING EVENTS TEMPLATE */
+
+<div class="media s-lc-c-evt">
+    <div class="media-body">
+        <div class="s-lc-display-category">
+            {{categories}}
+        </div>
+        <h2 class="media-heading s-lc-c-evt-title">
+            {{#url}}<a title="{{title}}" href="{{url}}">{{/url}}
+            {{title}}
+            {{#url}}</a>{{/url}}
+
+            {{^registration_enabled}}{{^external_event}}
+                    {{#location}}
+                        {{#online_event}}
+                            <span class="label label-info s-lc-eventcard-pill">
+                                {{textInPersonEvent}} / {{textOnlineEvent}}
+                            </span>
+                        {{/online_event}}
+                        {{^online_event}}
+                            <span class="label label-info s-lc-eventcard-pill">
+                                {{textInPersonEvent}}
+                            </span>
+                        {{/online_event}}
+                    {{/location}}
+                    {{^location}}
+                        {{#online_event}}
+                            <span class="label label-info s-lc-eventcard-pill">
+                                {{textOnlineEvent}}
+                            </span>
+                        {{/online_event}}
+                    {{/location}}
+                {{/external_event}}{{/registration_enabled}}
+
+            {{#registration_enabled}}
+                {{#online_event}}
+                    {{#in_person_registration}}
+                        <span class="label label-info s-lc-eventcard-pill">
+                            {{textInPersonEvent}} / {{textOnlineEvent}}
+                        </span>
+                    {{/in_person_registration}}
+                    {{^in_person_registration}}
+                        <span class="label label-info s-lc-eventcard-pill">
+                            {{textOnlineEvent}}
+                        </span>
+                    {{/in_person_registration}}
+                {{/online_event}}
+                {{^online_event}}
+                    <span class="label label-info s-lc-eventcard-pill">
+                        {{textInPersonEvent}}
+                    </span>
+                {{/online_event}}
+            {{/registration_enabled}}
+        </h2>
+        <div class="s-lc-event-date">
+            {{^multi_day_event}}
+                {{monthfull}} {{day}}, {{year}} {{start}}{{#end}} - {{end}}{{/end}}
+                {{#recurring_event}}
+                    <i class="fa fa-calendar pad-left-med" aria-hidden="true"></i>
+                    <a href="#" onclick="return springyPublic.getFutureEventDates({{id}});">{{textShowMoreDates}}</a>
+                    <p id="future_loading_{{id}}" style="display:none"><i class="fa fa-spinner fa-spin fa-lg" aria-hidden="true"></i></p>
+                    <p id="future_{{id}}" style="display:none"></p>
+                {{/recurring_event}}
+            {{/multi_day_event}}
+
+            {{#multi_day_event}}
+                {{^all_day}}{{start}},{{/all_day}}
+                {{monthfull}} {{day}}, {{year}}
+                –
+                {{^all_day}}{{end}},{{/all_day}}
+                {{#multi_day_end}}
+                    {{monthfull}} {{day}}, {{year}}
+                {{/multi_day_end}}
+            {{/multi_day_event}}
+
+        </div>
+        <div class="s-lc-display-location">
+            {{#location}}
+                {{#locations}}{{name}}{{#map}} (<a href="{{map}}" target="_blank" title="Open map for {{name}}">Map <i class="fa fa-external-link" aria-hidden="true"></i></a>){{/map}}{{^last}}, {{/last}}{{/locations}}{{#campus}}, {{campus}}{{/campus}}
+            {{/location}}
+
+            {{^location}}
+                {{#campus}}
+                    {{campus}}
+                {{/campus}}
+            {{/location}}
+        </div>
+    </div>
+    {{#featured_image}}
+        <div class="media-right"><a href="{{url}}"> <img class="media-object img-thumbnail s-lc-c-evt-fi" src="{{featured_image}}" alt="{{title}}"> </a></div>
+    {{/featured_image}}
+</div>
