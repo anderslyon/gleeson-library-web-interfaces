@@ -1,6 +1,6 @@
 /* GLEESON LIBRARY -- UNIVERSITY OF SAN FRANCISCO */
 /* CUSTOM STYLES USED ON LIBGUIDES */
-/* Last Edit: 11/22/2024 */
+/* Last Edit: 03/20/2025 */
 
 /* HTML & BODY */
 
@@ -836,12 +836,16 @@ a.s-lg-tab-drop {
     }
 }
 
+.s-lib-floating-box .s-lib-profile-container {
+    padding: 25px !important;
+}
+
 .s-lib-profile-image img {
     background-color: transparent;
     border: none;
     box-shadow: none;
     padding: 0;
-    max-width: 225px;
+    max-width: 300px;
     width: 100%;
 }
 
@@ -910,7 +914,7 @@ a .s-lib-profile-name {
 .s-lib-profile-subjects {
     font-size: 0.875rem;
     margin-bottom: 10px;
-    max-width: 225px;
+    max-width: 300px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -1114,7 +1118,7 @@ a .s-lib-profile-name {
     font-weight: 700;
     color: #fff;
     border: 2px solid #00543c;
-    max-width: 100%;
+    max-width: 300px;
     width: 100%;
     padding: 7px;
     line-height: 1;
@@ -1574,10 +1578,10 @@ li.s-lg-tn-li,
 }
 
 .library-search .input-group.selectors label {
-    font-weight: 400;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
     padding: 0;
-    font-size: 20px;
-    font-family: 'Fira Sans', sans-serif;
     margin-right: 10px;
 }
 
@@ -3278,6 +3282,18 @@ p.documentation {
     color: gray;
     margin-bottom: 0;
     text-transform: uppercase;
+}
+
+/* BADGES — DOCUMENTATION */
+
+.badge.documentation {
+    text-transform: uppercase;
+    font-family: 'Fira Sans Extra Condensed';
+    background-color: #00543C;
+    font-size: 16px;
+    border-radius: 0;
+    padding: 4px 8px;
+    margin: 1px;
 }
 
 /* PRE-FORMATTED TEXT & SOURCE CODE */
