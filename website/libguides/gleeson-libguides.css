@@ -229,6 +229,19 @@ ul {
     }
 }
 
+big {
+    font-size: 1.125rem;
+    font-family: 'IBM Plex Serif', serif;
+    line-height: 1.2;
+    color: #000;
+}
+
+@media screen and (min-width: 768px) {
+    big {
+        font-size: 1.5rem;
+    }
+}
+
 /* TABLES */
 
 .main-content-container .table > thead > tr > th {
