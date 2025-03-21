@@ -410,7 +410,7 @@ big {
     display: flex;
     align-items: end;
     background-color: #000;
-        height: 200px;
+    height: 200px;
 }
 
 #hero-guide .hero-image-container h1#s-lg-guide-name {
@@ -1094,11 +1094,23 @@ a .s-lib-profile-name {
     text-align: center;
 }
 
+#dept-profile-box tr.hours-alt.hours-today-row.hours-library.loc5184 {
+    display: block;
+}
+
 #dept-profile-box tr.hours-alt.hours-today-row.hours-library.loc5184,
+#dept-profile-box tr.hours-alt.hours-today-row.hours-library.loc5184 th,
 #dept-profile-box tr.hours-alt.hours-today-row.hours-depart.dep17110,
 #dept-profile-box tr.hours-alt.hours-today-row.hours-depart.dep17112,
-#dept-profile-box tr.hours-alt.hours-today-row.hours-depart.dep17111 th.hours-col-loc {
+#dept-profile-box tr.hours-alt.hours-today-row.hours-depart.dep17111 th.hours-col-loc,
+#dept-profile-box #access-services-hours tr.hours-alt.hours-today-row.hours-depart.dep17111 td,
+#dept-profile-box #scua-hours tr.hours-alt.hours-today-row.hours-library.loc5184 td {
     display: none;
+}
+
+#dept-profile-box #access-services-hours tr.hours-alt.hours-today-row.hours-library.loc5184 td,
+#dept-profile-box #scua-hours tr.hours-alt.hours-today-row.hours-depart.dep17111 td {
+    display: block !important;
 }
 
 #dept-profile-box .dept-profile-hours-js table {
@@ -3148,6 +3160,10 @@ h2.homepage.events-blog {
     }
 }
 
+span.link-purpose i {
+    font-size: 10px;
+    padding: 0 5px;
+}
 
 /* SCROLL TOP */
 
