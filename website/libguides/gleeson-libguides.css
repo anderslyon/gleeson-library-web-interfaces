@@ -1934,6 +1934,7 @@ ul.media-list.links {
 
 ul.media-list.links .media {
     margin-top: 0;
+    overflow: visible;
 }
 
 ul.media-list.links.one li.media.link ul.media-list.links.two li.media.link {
