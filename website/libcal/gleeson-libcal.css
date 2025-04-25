@@ -1050,10 +1050,11 @@ i.fa.fa-edit {
     border: 1px solid #dddad1
 } */
 
+.s-lc-public-evtp #s-lc-page-column-1,
 .s-lc-public-evtp #s-lc-page-column-2 {
     background-color: transparent !important;
     border-radius: 0;
-    margin: 25px 0 35px 0
+    margin: 15px 0 35px 0
 }
 
 .s-lc-public-evtp #s-lc-page-column-2 .s-lc-color-bars {
@@ -1696,12 +1697,11 @@ button.btn.btn-default.btn-small.s-lc-nav-tab.s-lc-nav-card, button.btn.btn-defa
 
 img.event-page {
     display: block;
-    max-width: 700px !important;
+    /* max-width: 700px !important; */
     width: 100% !important;
     height: auto;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 40px;
     margin-bottom: 40px;
 }
 

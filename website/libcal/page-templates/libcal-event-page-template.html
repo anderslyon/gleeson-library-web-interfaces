@@ -6,7 +6,50 @@
 
 <h1 class="media-heading">{{title}}</h1>
 
-<!-- EVENT DESCRIPTION TEMPLATE — LEFT COLUMN / 75% -->
+<!-- EVENT DETAILS TEMPLATE — LEFT COLUMN / 25% -->
+
+{{#single_event}}
+    <div class="s-lc-display-date">{{date}} <span class="s-lc-event-time">{{start}} – {{end}}</span></div>
+{{/single_event}}
+
+{{#more_info}}
+    <div class="s-lc-display-date">{{{more_info}}}</div>
+{{/more_info}}
+
+{{#location}}
+    <div class="s-lc-display-location">{{location}}</div>
+{{/location}}
+
+{{#online_event}}
+    <div class="s-lc-display-location">
+        {{textOnlineEvent}}
+    </div>
+{{/online_event}}
+
+<div class="s-lc-display-share">
+<div class="title">Share</div>
+<div class="btn-group" id="s-lc-event-tool-btns">
+                    <a class="btn btn-default" href="#" onclick="window.print(); return false;" data-container="body" data-toggle="tooltip" title="Print page" id="s-lc-event-b-p"><i class="fa fa-print fa-lg"></i><span class="sr-only">Print the page</span></a>
+                    <a class="btn btn-default" href="{{ical}}" data-container="body" data-toggle="tooltip" title="Add to Calendar using iCal" id="s-lc-event-b-c"><i class="fa fa-calendar fa-lg"></i><span class="sr-only">Add to a Calendar using iCal</span></a>
+                    <a class="btn btn-default" href="{{facebook_url}}" data-container="body" data-toggle="tooltip" title="Share on Facebook" id="s-lc-event-b-f" target="_blank">
+                        <i class="fa fa-facebook-square fa-lg"></i>
+                        <span class="sr-only">Share page on Facebook</span>
+                        <span class="sr-only">This link opens in a new window</span>
+                    </a>
+                    <a class="btn btn-default" href="{{google_url}}" data-container="body" data-toggle="tooltip" title="Add to Google Calendar" id="s-lc-event-b-g" target="_blank">
+                        <i class="fa fa-google-plus-square fa-lg" aria-hidden="true"></i>
+                        <span class="sr-only">Add to Google Calendar</span>
+                        <span class="sr-only">This link opens in a new window</span>
+                    </a>
+                    <a class="btn btn-default" href="{{twitter_url}}" data-container="body" data-toggle="tooltip" title="Share on Twitter" id="s-lc-event-b-t" target="_blank">
+                        <i class="fa fa-twitter-square fa-lg"></i>
+                        <span class="sr-only">Share page on Twitter</span>
+                        <span class="sr-only">This link opens in a new window</span>
+                    </a>
+                </div>
+</div>
+
+<!-- EVENT DESCRIPTION TEMPLATE — RIGHT COLUMN / 75% -->
 
 <div class="row">
     <div class="col-md-12">
@@ -15,7 +58,7 @@
                 <img src="{{featured_image}}" class="event-page" alt="{{title}}">
             {{/featured_image}}
             <div id="s-lc-event-desc">
-                <big>{{{description}}}</big>
+                {{{description}}}
             </div>
             <div class="media-body">
                 {{#lg_id}}
@@ -176,46 +219,3 @@
     jQuery("body").addClass("s-lc-public-evtp");
 
 </script>
-
-<!-- EVENT DESCRIPTION TEMPLATE — RIGHT COLUMN / 25% -->
-
-{{#single_event}}
-    <div class="s-lc-display-date">{{date}} <span class="s-lc-event-time">{{start}} – {{end}}</span></div>
-{{/single_event}}
-
-{{#more_info}}
-    <div class="s-lc-display-date">{{{more_info}}}</div>
-{{/more_info}}
-
-{{#location}}
-    <div class="s-lc-display-location">{{location}}</div>
-{{/location}}
-
-{{#online_event}}
-    <div class="s-lc-display-location">
-        {{textOnlineEvent}}
-    </div>
-{{/online_event}}
-
-<div class="s-lc-display-share">
-    <div class="title">Share</div>
-    <div class="btn-group" id="s-lc-event-tool-btns">
-        <a class="btn btn-default" href="#" onclick="window.print(); return false;" data-container="body" data-toggle="tooltip" title="Print page" id="s-lc-event-b-p"><i class="fa fa-print fa-lg"></i><span class="sr-only">Print the page</span></a>
-        <a class="btn btn-default" href="{{ical}}" data-container="body" data-toggle="tooltip" title="Add to Calendar using iCal" id="s-lc-event-b-c"><i class="fa fa-calendar fa-lg"></i><span class="sr-only">Add to a Calendar using iCal</span></a>
-        <a class="btn btn-default" href="{{facebook_url}}" data-container="body" data-toggle="tooltip" title="Share on Facebook" id="s-lc-event-b-f" target="_blank">
-            <i class="fa fa-facebook-square fa-lg"></i>
-            <span class="sr-only">Share page on Facebook</span>
-            <span class="sr-only">This link opens in a new window</span>
-        </a>
-        <a class="btn btn-default" href="{{google_url}}" data-container="body" data-toggle="tooltip" title="Add to Google Calendar" id="s-lc-event-b-g" target="_blank">
-            <i class="fa fa-google-plus-square fa-lg" aria-hidden="true"></i>
-            <span class="sr-only">Add to Google Calendar</span>
-            <span class="sr-only">This link opens in a new window</span>
-        </a>
-        <a class="btn btn-default" href="{{twitter_url}}" data-container="body" data-toggle="tooltip" title="Share on Twitter" id="s-lc-event-b-t" target="_blank">
-            <i class="fa fa-twitter-square fa-lg"></i>
-            <span class="sr-only">Share page on Twitter</span>
-            <span class="sr-only">This link opens in a new window</span>
-        </a>
-    </div>
-</div>
