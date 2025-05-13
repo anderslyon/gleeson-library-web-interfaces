@@ -1,6 +1,6 @@
 /* GLEESON LIBRARY -- UNIVERSITY OF SAN FRANCISCO */
 /* CUSTOM STYLES USED ON LIBGUIDES (LEGACY) */
-/* Last Edit: 03/28/2025 */
+/* Last Edit: 05/13/2025 */
 
 /* HTML & BODY */
 
@@ -1048,7 +1048,8 @@ a .s-lib-profile-name {
 
 #dept-profile-box .dept-profile-contact,
 #dept-profile-box .dept-profile-location,
-#dept-profile-box .dept-profile-hours {
+#dept-profile-box .dept-profile-hours,
+#dept-profile-box .dept-profile-link {
     padding-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -1123,14 +1124,16 @@ a .s-lib-profile-name {
 #dept-profile-box .dept-profile-contact-email,
 #dept-profile-box .dept-profile-contact-phone,
 #dept-profile-box .dept-profile-location,
-#dept-profile-box .dept-profile-hours {
+#dept-profile-box .dept-profile-hours,
+#dept-profile-box .dept-profile-link {
     display: flex;
 }
 
 #dept-profile-box .dept-profile-email-icon,
 #dept-profile-box .dept-profile-phone-icon,
 #dept-profile-box .dept-profile-location-icon,
-#dept-profile-box .dept-profile-hours-icon {
+#dept-profile-box .dept-profile-hours-icon,
+#dept-profile-box .dept-profile-link-icon {
     display: flex;
     align-items: center;
     color: #00543C;

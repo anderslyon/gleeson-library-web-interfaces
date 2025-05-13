@@ -50,7 +50,8 @@ h1.s-lc-appm-booking-header {
     }
 }
 
-h2 {
+h2,
+.s-lc-public-evtp h1.media-heading {
     font-size: 2rem;
     line-height: 1;
     letter-spacing: 0.0125rem;
@@ -58,10 +59,15 @@ h2 {
 }
 
 @media screen and (min-width: 768px) {
-    h2 {
+    h2,
+    .s-lc-public-evtp h1.media-heading {
         font-size: 3rem;
         line-height: 1.1667;
     }
+}
+
+.s-lc-public-evtp h1.media-heading {
+    font-weight: 600;
 }
 
 h3 {
@@ -550,10 +556,11 @@ label {
 }
 
 .s-lc-box-title h1 {
-    font-size: 24px;
-    font-weight: 700;
+    font-size: 20px;
+    font-weight: 600;
     font-family: 'Fira Sans Extra Condensed', sans-serif;
     text-align: center;
+    color: #000;
 }
 
 .s-lc-box-title h2 {
@@ -568,7 +575,7 @@ label {
 
 .s-lc-box-title {
     border: 0;
-    padding: 10px 0
+    padding: 10px 20px;
 }
 
 .hr-alt {
@@ -1530,6 +1537,8 @@ img.media-object.img-thumbnail.s-lc-c-evt-fi {
     max-width: unset !important;
     max-height: unset !important;
     margin: 0;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
 }
 
 @media screen and (min-width: 768px) {
@@ -1628,7 +1637,17 @@ img.media-object.img-thumbnail.s-lc-c-evt-fi {
 
 /* STYLING FOR INDIVIDUAL CALENDARS */
 
-@media (min-width: 992px) {
+@media (max-width: 1199px) and (min-width: 992px) {
+    #s-lc-page-column-1.col-md-3 {
+        padding-right: 40px;
+        width: 33.33333333%;
+    }
+    #s-lc-page-column-2.col-md-9 {
+        width: 66.66666667%;
+    }
+}
+
+@media (min-width: 1200px) {
     #s-lc-page-column-2.col-md-9 {
         padding-left: 40px;
     }
@@ -1697,12 +1716,14 @@ button.btn.btn-default.btn-small.s-lc-nav-tab.s-lc-nav-card, button.btn.btn-defa
 
 img.event-page {
     display: block;
-    /* max-width: 700px !important; */
+    max-width: 700px !important;
     width: 100% !important;
     height: auto;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 40px;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
 }
 
 /* STYLING FOR EVENT ORGANIZER PROFILES */
@@ -1710,6 +1731,8 @@ img.event-page {
 .s-lc-profilebox {
     padding-top: 0;
     color: #000;
+    padding: 0 20px 20px;
+    margin: 0;
 }
 
 .s-lc-profile-image img {
@@ -1717,7 +1740,7 @@ img.event-page {
     box-shadow: none;
     padding: 0;
     max-width: 100%;
-    width: 225px;
+    width: 300px;
 }
 
 .s-lc-profile-name {
@@ -1731,6 +1754,11 @@ img.event-page {
     color: #000;
     margin-bottom: 10px;
 }
+
+.s-lc-profile-text p {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-size: 18px;
+}   
 
 /* STYLING FOR EVENT LOCATION */
 

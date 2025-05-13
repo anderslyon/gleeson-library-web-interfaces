@@ -1,7 +1,7 @@
 /* GLEESON LIBRARY -- UNIVERSITY OF SAN FRANCISCO */
 /* CUSTOM STYLES USED ON LIBGUIDES (NEW) -- BOOTSTRAP 5 */
 /* STYLES FOR A-Z LIST, GENERAL APPEARANCE,HEADER, FOOTER */
-/* Last Edit: 03/28/2025 */
+/* Last Edit: 05/25/2025 */
 
 /* HEADER */
 
@@ -995,6 +995,48 @@ div[id^=additional-info] dt {
     font-size: 14px;
     color: #000;
 }
+
+/* ASK A LIBRARIAN BUTTON */
+
+.ask-a-librarian-component {
+    position: fixed;
+    z-index: 1050;
+    right: 1px;
+    bottom: 1px;
+    padding: 10px 14px 10px 0;
+}
+
+a.ask-a-librarian-button {
+    font-size: 24px;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    text-decoration: none;
+    border: none;
+    color: #000;
+    background-color: #FDBB30;
+    font-weight: 500;
+    padding: 10px 30px;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, .3));
+    display: inline-block;
+}
+
+@media screen and (min-width: 768px) {
+    a.ask-a-librarian-button {
+        font-size: 26px;
+        padding: 10px 40px;
+    }
+}
+
+a.ask-a-librarian-button:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    color: #000;
+    text-decoration: underline;
+}
+
+a.ask-a-librarian-button i {
+    padding-right: 10px;
+}
+
 
 /* USFCA FOOTER */
 
