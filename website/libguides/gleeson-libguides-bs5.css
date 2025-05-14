@@ -1,6 +1,6 @@
 /* GLEESON LIBRARY -- UNIVERSITY OF SAN FRANCISCO */
 /* CUSTOM STYLES USED ON LIBGUIDES (NEW) -- BOOTSTRAP 5 */
-/* STYLES FOR A-Z LIST, GENERAL APPEARANCE,HEADER, FOOTER */
+/* STYLES FOR A-Z LIST, GENERAL APPEARANCE, HEADER, FOOTER */
 /* Last Edit: 05/14/2025 */
 
 /* HEADER */
@@ -999,10 +999,11 @@ div[id^=additional-info] dt {
 /* ALERTS */
 
 .alert.library-alert {
-    padding: 15px;
+    padding: 15px 0;
     border-radius: 0;
     margin-bottom: 0;
     color: #000;
+    border: 0;
 }
 
 .alert.library-alert a {

@@ -1,6 +1,6 @@
 /* GLEESON LIBRARY -- UNIVERSITY OF SAN FRANCISCO */
 /* CUSTOM GLOBAL STYLES USED ON LIBGUIDES (LEGACY), LIBANSWERS, LIBCAL */
-/* Last Edit: 11/22/2024 */
+/* Last Edit: 05/14/2025 */
 
 /* TYPOGRAPHY */
 
@@ -1426,7 +1426,7 @@ https://stackoverflow.com/questions/28247310/bootstrap-mobile-menu-icon-change-t
 /* ALERTS */
 
 .alert.library-alert {
-    padding: 15px;
+    padding: 15px 0;
     border-radius: 0;
     margin-bottom: 0;
     color: #000;
