@@ -1033,16 +1033,19 @@ a .s-lib-profile-name {
     padding-top: 20px;
 }
 
-#dept-profile-box .dept-profile-contact a {
+#dept-profile-box .dept-profile-contact a,
+#dept-profile-box .dept-profile-link-text a {
     text-decoration: underline;
 }
 
-#dept-profile-box .dept-profile-contact a:hover {
+#dept-profile-box .dept-profile-contact a:hover,
+#dept-profile-box .dept-profile-link a:hover {
     text-decoration: none;
 }
 
 #dept-profile-box .dept-profile-email-link,
-#dept-profile-box .dept-profile-phone-link {
+#dept-profile-box .dept-profile-phone-link,
+#dept-profile-box .dept-profile-link {
     margin-bottom: 3px;
 }
 
@@ -1117,7 +1120,8 @@ a .s-lib-profile-name {
     font-size: 18px;
 }
 
-#dept-profile-box .dept-profile-location-label {
+#dept-profile-box .dept-profile-location-label,
+#dept-profile-box .dept-profile-link-label {
     display: none;
 }
 
