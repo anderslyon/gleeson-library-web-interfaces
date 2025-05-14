@@ -12,6 +12,14 @@
     <div class="s-lc-display-date">{{date}} <span class="s-lc-event-time">{{start}} – {{end}}</span></div>
 {{/single_event}}
 
+{{#multi_day_event}}
+    <div class="s-lc-display-date">{{^all_day}}{{start}},{{/all_day}}{{date}} – {{^all_day}}{{end}},{{/all_day}}{{multi_day_end_date}}</div>
+{{/multi_day_event}}
+
+{{#multi_day_event}}
+    <div class="s-lc-display-date">{{^all_day}}{{start}},{{/all_day}}{{date}} – {{^all_day}}{{end}},{{/all_day}}{{multi_day_end_date}}</div>
+{{/multi_day_event}}
+
 {{#more_info}}
     <div class="s-lc-display-date">{{{more_info}}}</div>
 {{/more_info}}
