@@ -1430,6 +1430,7 @@ https://stackoverflow.com/questions/28247310/bootstrap-mobile-menu-icon-change-t
     border-radius: 0;
     margin-bottom: 0;
     color: #000;
+    border: 0;
 }
 
 .alert.library-alert a {
