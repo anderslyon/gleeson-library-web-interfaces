@@ -1,6 +1,6 @@
 /* GLEESON LIBRARY -- UNIVERSITY OF SAN FRANCISCO */
 /* CUSTOM STYLES USED ON LIBGUIDES (LEGACY) */
-/* Last Edit: 05/13/2025 */
+/* Last Edit: 05/28/2025 */
 
 /* HTML & BODY */
 
@@ -1237,7 +1237,7 @@ a .s-lib-profile-name {
 }
 
 .panel.documentation .panel-heading {
-    padding: 10px;
+    padding: 15px;
 }
 
 .panel.documentation .panel-title {
@@ -1247,10 +1247,6 @@ a .s-lib-profile-name {
 }
 
 @media screen and (min-width: 768px) {
-    .panel.documentation .panel-heading {
-        padding: 20px;
-    }
-
     .panel.documentation .panel-title {
         font-size: 24px;
     }

@@ -1,6 +1,6 @@
 /* GLEESON LIBRARY -- UNIVERSITY OF SAN FRANCISCO */
 /* CUSTOM GLOBAL STYLES USED ON LIBGUIDES (LEGACY), LIBANSWERS, LIBCAL */
-/* Last Edit: 05/14/2025 */
+/* Last Edit: 05/28/2025 */
 
 /* TYPOGRAPHY */
 
@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    font-family: 'IBM Plex Serif', serif;
+    font-family: "IBM Plex Serif", serif;
     font-weight: 400;
     font-size: 1rem;
 }
@@ -57,9 +57,9 @@ a:hover {
 }
 
 *:focus-visible {
-    -webkit-box-shadow: 0 0 0 3px #FFF !important;
-    box-shadow: 0 0 0 3px #FFF !important;
-    outline: 3px solid #00A1CA !important;
+    -webkit-box-shadow: 0 0 0 3px #fff !important;
+    box-shadow: 0 0 0 3px #fff !important;
+    outline: 3px solid #00a1ca !important;
     outline-offset: 3px !important;
     z-index: 1000 !important;
 }
@@ -71,14 +71,14 @@ btn.active.focus,
 .btn:active:focus-visible,
 .btn:focus-visible,
 a:focus-visible,
-input[type=checkbox]:focus-visible,
-input[type=file]:focus-visible,
-input[type=radio]:focus-visible {
+input[type="checkbox"]:focus-visible,
+input[type="file"]:focus-visible,
+input[type="radio"]:focus-visible {
     outline-offset: 3px !important;
 }
 
 a:focus {
-    color: #00543C;
+    color: #00543c;
 }
 
 /* LAYOUT */
@@ -120,7 +120,7 @@ a:focus {
 /* FIGURE CAPTIONS */
 
 figure figcaption {
-    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-family: "Fira Sans Extra Condensed", sans-serif;
     font-weight: 400;
     font-size: 0.875rem;
     line-height: 1.2858;
@@ -131,14 +131,13 @@ figure figcaption {
 
 table,
 table p {
-    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-family: "Fira Sans Extra Condensed", sans-serif;
     font-size: 1rem;
     line-height: 1.2;
     word-break: normal;
 }
 
 @media screen and (min-width: 1024px) {
-
     table,
     table p {
         font-size: 1.125rem;
@@ -176,7 +175,7 @@ th {
 }
 
 thead {
-    background-color: #D7D7D7;
+    background-color: #d7d7d7;
 }
 
 .table-responsive > .table > tbody > tr > td,
@@ -191,13 +190,12 @@ thead {
 table caption {
     font-size: 1.25rem;
     font-weight: 500;
-    color: #00543C;
+    color: #00543c;
     padding-top: 5px;
     padding-bottom: 5px;
 }
 
 @media screen and (min-width: 768px) {
-
     table caption {
         font-size: 1.5rem;
     }
@@ -206,9 +204,9 @@ table caption {
 /* BLOCKQUOTES */
 
 blockquote {
-    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-family: "Fira Sans Extra Condensed", sans-serif;
     font-weight: 400;
-    color: #00543C;
+    color: #00543c;
     font-size: 2.25rem;
     line-height: 1.1112;
     margin: 0;
@@ -225,7 +223,7 @@ blockquote p {
     line-height: 1.2;
     padding-left: 1.25rem;
     margin-left: 3.5rem;
-    border-left: 0.125rem solid #FDBB30;
+    border-left: 0.125rem solid #fdbb30;
     margin-bottom: 0;
 }
 
@@ -235,9 +233,10 @@ blockquote::before {
     top: 0;
     width: 2.25rem;
     height: 2.0625rem;
-    background: #FFF url(https://www.usfca.edu/themes/custom/usfca/pattern_lab/source/images/icons-usf/quote.svg) no-repeat center;
+    background: #fff url(https://www.usfca.edu/themes/custom/usfca/pattern_lab/source/images/icons-usf/quote.svg)
+        no-repeat center;
     background-size: cover;
-    content: '';
+    content: "";
 }
 
 /* GLOBAL HEADER */
@@ -326,7 +325,7 @@ nav.gleeson.navbar {
 .gleeson ul.nav.navbar-nav.navbar-right.utility-links li a {
     font-size: 1.125rem;
     line-height: 1.5;
-    padding: 0
+    padding: 0;
 }
 
 .gleeson ul.nav.navbar-nav.utility-links li a:hover {
@@ -373,12 +372,12 @@ nav.gleeson.navbar {
 }
 
 .gleeson .navbar-nav > li > a {
-    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-family: "Fira Sans Extra Condensed", sans-serif;
     font-style: normal;
     font-weight: 600;
     text-transform: uppercase;
     font-size: 1.625rem;
-    color: #00543C;
+    color: #00543c;
     text-decoration: none;
 }
 
@@ -407,7 +406,6 @@ nav.gleeson.navbar {
 }
 
 @media screen and (min-width: 992px) {
-
     .gleeson .navbar-nav.main-menu > li > a:hover {
         text-decoration: underline;
         -webkit-transition: all 0.1s;
@@ -467,7 +465,6 @@ nav.gleeson.navbar {
 }
 
 @media (max-width: 991px) {
-
     .gleeson .navbar-nav .open .dropdown-menu .dropdown-header,
     .gleeson .navbar-nav .open .dropdown-menu > li > a {
         padding: 0;
@@ -476,7 +473,7 @@ nav.gleeson.navbar {
 
 .gleeson li.dropdown-header {
     padding: 0;
-    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-family: "Fira Sans Extra Condensed", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 1.25rem;
@@ -503,7 +500,7 @@ nav.gleeson.navbar {
     font-size: 1.375rem;
     color: #00543c;
     line-height: 1.091;
-    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-family: "Fira Sans Extra Condensed", sans-serif;
     font-style: normal;
     font-weight: 400;
     text-decoration: none;
@@ -515,9 +512,8 @@ nav.gleeson.navbar {
     text-decoration: underline;
 }
 
-
 .gleeson ul.nav.navbar-nav.utility-links li a {
-    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-family: "Fira Sans Extra Condensed", sans-serif;
     font-style: normal;
     text-transform: capitalize;
     font-weight: 400;
@@ -548,7 +544,6 @@ nav.gleeson.navbar {
     .gleeson .navbar-toggle .icon-bar + .icon-bar {
         margin-top: 6px;
     }
-
 }
 
 /* CHANGE NAVBAR COLLAPSE BREAKPOINT TO 991px */
@@ -603,7 +598,6 @@ nav.gleeson.navbar {
     }
 }
 
-
 /* TURN HAMBURGER BARS INTO X WHEN MENU IS OPEN
 
 https://stackoverflow.com/questions/28247310/bootstrap-mobile-menu-icon-change-to-x-close
@@ -647,12 +641,10 @@ https://stackoverflow.com/questions/28247310/bootstrap-mobile-menu-icon-change-t
 
 */
 
-
-
 /* GLOBAL FOOTER — USFCA.EDU FOOTER */
 
 .cc--footer {
-    background-color: #00543C;
+    background-color: #00543c;
 }
 
 .cc--footer .c--footer {
@@ -810,11 +802,10 @@ https://stackoverflow.com/questions/28247310/bootstrap-mobile-menu-icon-change-t
 }
 
 .cc--footer-contact .c--footer-contact .f--wysiwyg p {
-    color: #FFF;
+    color: #fff;
 }
 
 @media screen and (min-width: 768px) {
-
     div .f--wysiwyg p,
     .cc--rich-text .f--wysiwyg p,
     .cc--accordions .accordion-panel p {
@@ -958,7 +949,7 @@ https://stackoverflow.com/questions/28247310/bootstrap-mobile-menu-icon-change-t
     margin-bottom: 0.4375rem;
     font-size: 1.125rem;
     line-height: 1.4445;
-    color: #FFF;
+    color: #fff;
     text-transform: uppercase;
 }
 
@@ -1048,9 +1039,9 @@ https://stackoverflow.com/questions/28247310/bootstrap-mobile-menu-icon-change-t
 
 .cc--footer-menu nav ul li a {
     font-size: 1.125rem;
-    color: #FFF;
+    color: #fff;
     text-decoration: none;
-    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-family: "Fira Sans Extra Condensed", sans-serif;
     font-style: normal;
     font-weight: 400;
 }
@@ -1112,7 +1103,7 @@ https://stackoverflow.com/questions/28247310/bootstrap-mobile-menu-icon-change-t
     display: block;
     position: relative;
     text-transform: uppercase;
-    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-family: "Fira Sans Extra Condensed", sans-serif;
     font-style: normal;
     font-weight: 600;
 }
@@ -1121,10 +1112,10 @@ https://stackoverflow.com/questions/28247310/bootstrap-mobile-menu-icon-change-t
     display: inline-block;
     width: 0.875rem;
     height: 1.5rem;
-    background: url(https://usfca-site-pattern-lab.herokuapp.com/images/icons-usf/USF_arrow_yellow.svg) no-repeat center center;
-    content: '';
+    background: url(https://usfca-site-pattern-lab.herokuapp.com/images/icons-usf/USF_arrow_yellow.svg) no-repeat center
+        center;
+    content: "";
 }
-
 
 @media screen and (min-width: 768px) {
     .cc--footer-menu nav.mc--footer-utility ul li a::after {
@@ -1146,7 +1137,7 @@ https://stackoverflow.com/questions/28247310/bootstrap-mobile-menu-icon-change-t
 
 .cc--footer .c--footer .footer-main .footer-bottom {
     padding-top: 1.875rem;
-    border-top: 0.0625rem solid #FDBB30;
+    border-top: 0.0625rem solid #fdbb30;
 }
 
 @media screen and (min-width: 1024px) {
@@ -1219,9 +1210,9 @@ https://stackoverflow.com/questions/28247310/bootstrap-mobile-menu-icon-change-t
 }
 
 .cc--footer-links ul li {
-    color: #FFF;
+    color: #fff;
     line-height: 1;
-    font-family: 'IBM Plex Serif', serif;
+    font-family: "IBM Plex Serif", serif;
     font-weight: 400;
 }
 
@@ -1244,13 +1235,13 @@ https://stackoverflow.com/questions/28247310/bootstrap-mobile-menu-icon-change-t
         margin-right: 0.625rem;
         margin-left: 0.625rem;
         display: inline-block;
-        content: '|';
+        content: "|";
     }
 }
 
 .cc--footer .c--footer .footer-main .footer-bottom .info-container .f--wysiwyg {
     margin-top: 0;
-    color: #FFF;
+    color: #fff;
 }
 
 @media screen and (min-width: 768px) {
@@ -1280,7 +1271,7 @@ https://stackoverflow.com/questions/28247310/bootstrap-mobile-menu-icon-change-t
     line-height: 2;
     color: inherit;
     letter-spacing: -0.01188rem;
-    color: #FFF;
+    color: #fff;
 }
 
 .cc--footer-menu nav ul li a:hover,
@@ -1301,7 +1292,7 @@ https://stackoverflow.com/questions/28247310/bootstrap-mobile-menu-icon-change-t
 }
 
 .cc--footer-contact .c--footer-contact .f--wysiwyg a {
-    color: #FFF;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -1315,7 +1306,9 @@ https://stackoverflow.com/questions/28247310/bootstrap-mobile-menu-icon-change-t
     -webkit-transition: -webkit-transform 0.1s ease-in-out;
     transition: -webkit-transform 0.1s ease-in-out;
     transition: transform 0.1s ease-in-out;
-    transition: transform 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
+    transition:
+        transform 0.1s ease-in-out,
+        -webkit-transform 0.1s ease-in-out;
 }
 
 @media screen and (min-width: 768px) {
@@ -1326,10 +1319,8 @@ https://stackoverflow.com/questions/28247310/bootstrap-mobile-menu-icon-change-t
 }
 
 .cc--footer-social .footer-social-container .social-media-links--platforms > li a:hover path {
-    fill: #FDBB30;
+    fill: #fdbb30;
 }
-
-
 
 /* COMPONENTS — LISTED IN ALPHABETICAL ORDER */
 
@@ -1358,7 +1349,7 @@ https://stackoverflow.com/questions/28247310/bootstrap-mobile-menu-icon-change-t
     border-radius: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
-    border-bottom: 0.125rem solid #FDBB30;
+    border-bottom: 0.125rem solid #fdbb30;
 }
 
 .panel-accordion > .panel-heading {
@@ -1381,7 +1372,6 @@ https://stackoverflow.com/questions/28247310/bootstrap-mobile-menu-icon-change-t
     content: "\f054";
     font-size: 1rem;
     padding-top: 0.313rem;
-
 }
 
 .panel-accordion .panel-title {
@@ -1438,31 +1428,31 @@ https://stackoverflow.com/questions/28247310/bootstrap-mobile-menu-icon-change-t
 }
 
 .alert.turquoise.library-alert {
-    background-color: #02B8A0;
+    background-color: #02b8a0;
 }
 
 .alert.olive.library-alert {
-    background-color: #73973F;
+    background-color: #73973f;
 }
 
 .alert.orange.library-alert {
-    background-color: #EB821E;
+    background-color: #eb821e;
 }
 
 .alert.red.library-alert {
-    background-color: #CD542C;
+    background-color: #cd542c;
 }
 
 .alert.lime.library-alert {
-    background-color: #AED136;
+    background-color: #aed136;
 }
 
 .alert.blue.library-alert {
-    background-color: #00B3D8;
+    background-color: #00b3d8;
 }
 
 .library-alert .alert-title {
-    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-family: "Fira Sans Extra Condensed", sans-serif;
     font-size: 20px;
     text-transform: uppercase;
     font-weight: 600;
@@ -1492,14 +1482,14 @@ https://stackoverflow.com/questions/28247310/bootstrap-mobile-menu-icon-change-t
 
 a.ask-a-librarian-button {
     font-size: 24px;
-    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-family: "Fira Sans Extra Condensed", sans-serif;
     text-decoration: none;
     border: none;
     color: #000;
-    background-color: #FDBB30;
+    background-color: #fdbb30;
     font-weight: 500;
     padding: 10px 30px;
-    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, .3));
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
     display: inline-block;
 }
 
@@ -1525,7 +1515,7 @@ a.ask-a-librarian-button i {
 
 .btn-cta {
     font-size: 1.125rem;
-    font-family: 'Fira Sans', sans-serif;
+    font-family: "Fira Sans", sans-serif;
     font-weight: 700;
     color: #000;
     min-height: 50px;
@@ -1543,12 +1533,16 @@ a.ask-a-librarian-button i {
     align-items: center;
     text-decoration: none;
     text-align: center;
-    -webkit-transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
-    transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+    -webkit-transition:
+        background-color 0.1s ease-in-out,
+        color 0.1s ease-in-out;
+    transition:
+        background-color 0.1s ease-in-out,
+        color 0.1s ease-in-out;
     border: 1px solid transparent;
     border-radius: 0;
     border-width: 2px;
-    border-color: #FDBB30;
+    border-color: #fdbb30;
     -webkit-box-shadow: inset 0 0 0 0 #fdbb30;
     box-shadow: inset 0 0 0 0 #fdbb30;
     text-transform: uppercase;
@@ -1558,10 +1552,14 @@ a.ask-a-librarian-button i {
 }
 
 .btn-cta:hover {
-    -webkit-transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
-    transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
-    background-color: #FFF;
-    border-color: #FDBB30;
+    -webkit-transition:
+        background-color 0.1s ease-in-out,
+        color 0.1s ease-in-out;
+    transition:
+        background-color 0.1s ease-in-out,
+        color 0.1s ease-in-out;
+    background-color: #fff;
+    border-color: #fdbb30;
     border-width: 0.125rem;
     text-decoration: none;
     -webkit-box-shadow: inset 0 0 0 0.1875rem #fdbb30;
@@ -1604,7 +1602,7 @@ a.ask-a-librarian-button i {
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-family: "Fira Sans Extra Condensed", sans-serif;
     font-weight: 600;
 }
 
@@ -1622,7 +1620,7 @@ a.ask-a-librarian-button i {
     height: 1.5625rem;
     -webkit-transform: rotate(-45deg) translateY(calc(-50% + 12px));
     transform: rotate(-45deg) translateY(calc(-50% + 12px));
-    background-color: #FFF;
+    background-color: #fff;
 }
 
 /*
@@ -1651,59 +1649,59 @@ a.ask-a-librarian-button i {
 }
 
 .cta-button-arrow.lime {
-    background-color: #AED136;
+    background-color: #aed136;
 }
 
 .cta-button-arrow.lime svg path {
-    fill: #AED136;
+    fill: #aed136;
 }
 
 .cta-button-arrow.orange {
-    background-color: #EB821E;
+    background-color: #eb821e;
 }
 
 .cta-button-arrow.orange svg path {
-    fill: #EB821E;
+    fill: #eb821e;
 }
 
 .cta-button-arrow.turquoise {
-    background-color: #02B8A0;
+    background-color: #02b8a0;
 }
 
 .cta-button-arrow.turquoise svg path {
-    fill: #02B8A0;
+    fill: #02b8a0;
 }
 
 .cta-button-arrow.olive {
-    background-color: #73973F;
+    background-color: #73973f;
 }
 
 .cta-button-arrow.olive svg path {
-    fill: #73973F;
+    fill: #73973f;
 }
 
 .cta-button-arrow.yellow {
-    background-color: #FDBB30;
+    background-color: #fdbb30;
 }
 
 .cta-button-arrow.yellow svg path {
-    fill: #FDBB30;
+    fill: #fdbb30;
 }
 
 .cta-button-arrow.red {
-    background-color: #CD542C;
+    background-color: #cd542c;
 }
 
 .cta-button-arrow.red svg path {
-    fill: #CD542C;
+    fill: #cd542c;
 }
 
 .cta-button-arrow.blue {
-    background-color: #00B3D8;
+    background-color: #00b3d8;
 }
 
 .cta-button-arrow.blue svg path {
-    fill: #00B3D8;
+    fill: #00b3d8;
 }
 
 /* CARDS — IMAGE */
@@ -1742,31 +1740,31 @@ a.ask-a-librarian-button i {
 }
 
 .v-panel-card-image.olive {
-    background-color: #73973F;
+    background-color: #73973f;
 }
 
 .v-panel-card-image.yellow {
-    background-color: #FDBB30;
+    background-color: #fdbb30;
 }
 
 .v-panel-card-image.orange {
-    background-color: #EB821E;
+    background-color: #eb821e;
 }
 
 .v-panel-card-image.red {
-    background-color: #CD542C;
+    background-color: #cd542c;
 }
 
 .v-panel-card-image.turquoise {
-    background-color: #02B8A0;
+    background-color: #02b8a0;
 }
 
 .v-panel-card-image.lime {
-    background-color: #AED136;
+    background-color: #aed136;
 }
 
 .v-panel-card-image.blue {
-    background-color: #00B3D8;
+    background-color: #00b3d8;
 }
 
 .v-panel-card-image .panel-text-container {
@@ -1775,7 +1773,7 @@ a.ask-a-librarian-button i {
 
 .v-panel-card-image .panel-heading {
     padding: 0;
-    margin-bottom: 28px
+    margin-bottom: 28px;
 }
 
 .v-panel-card-image .panel-title {
@@ -1847,31 +1845,31 @@ a.panel.v-panel-card-image:hover .panel-title {
 }
 
 .panel-card.olive {
-    background-color: #73973F;
+    background-color: #73973f;
 }
 
 .panel-card.yellow {
-    background-color: #FDBB30;
+    background-color: #fdbb30;
 }
 
 .panel-card.orange {
-    background-color: #EB821E;
+    background-color: #eb821e;
 }
 
 .panel-card.red {
-    background-color: #CD542C;
+    background-color: #cd542c;
 }
 
 .panel-card.turquoise {
-    background-color: #02B8A0;
+    background-color: #02b8a0;
 }
 
 .panel-card.lime {
-    background-color: #AED136;
+    background-color: #aed136;
 }
 
 .panel-card.blue {
-    background-color: #00B3D8;
+    background-color: #00b3d8;
 }
 
 /* .panel-card:hover {
@@ -1918,7 +1916,7 @@ a.panel.v-panel-card-image:hover .panel-title {
     line-height: 1;
     text-transform: uppercase;
     text-decoration: none;
-    font-family: 'Fira Sans', sans-serif;
+    font-family: "Fira Sans", sans-serif;
     font-weight: 700;
     display: flex;
     justify-content: right;
@@ -1958,14 +1956,15 @@ a.panel-link:hover span.text {
     -webkit-transition: -webkit-transform 0.1s ease-in-out;
     transition: -webkit-transform 0.1s ease-in-out;
     transition: transform 0.1s ease-in-out;
-    transition: transform 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
+    transition:
+        transform 0.1s ease-in-out,
+        -webkit-transform 0.1s ease-in-out;
 }
-
 
 /* LINKS — RELATED INFO BOX */
 
 .related-info-box {
-    border: 5px solid #FDBB30;
+    border: 5px solid #fdbb30;
     padding: 15px;
 }
 
@@ -1984,9 +1983,9 @@ h2.related-info-header {
 }
 
 a .related-info-link-title {
-    color: #00543C;
+    color: #00543c;
     font-size: 1rem;
-    font-family: 'Fira Sans', sans-serif;
+    font-family: "Fira Sans", sans-serif;
     font-weight: 600;
     display: flex;
     justify-content: left;
@@ -2017,7 +2016,9 @@ a.related-info-link:hover span.text {
     -webkit-transition: -webkit-transform 0.1s ease-in-out;
     transition: -webkit-transform 0.1s ease-in-out;
     transition: transform 0.1s ease-in-out;
-    transition: transform 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
+    transition:
+        transform 0.1s ease-in-out,
+        -webkit-transform 0.1s ease-in-out;
 }
 
 /* UTILITIES */
@@ -2035,7 +2036,7 @@ a.related-info-link:hover span.text {
     clip-path: inset(50%);
     margin: -1px;
     color: #000;
-    background-color: #FFF;
+    background-color: #fff;
     word-wrap: normal;
 }
 
