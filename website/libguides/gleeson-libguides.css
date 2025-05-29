@@ -3301,6 +3301,11 @@ span.link-purpose i {
     border-left: solid #0785bf 8px;
 }
 
+.well.best-practices {
+    border-left: 5px solid #Fdbb30;
+    background: transparent;
+}
+
 .well.more-info {
     border-left: 5px solid #000;
 }
