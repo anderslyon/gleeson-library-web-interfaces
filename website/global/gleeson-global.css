@@ -716,15 +716,15 @@ nav.gleeson.navbar {
         font-family: 'Fira Sans', sans-serif !important;
         font-weight: 600 !important;
         text-transform: uppercase !important;
-        background: #000 !important;
+        background: #00543C !important;
         color: #fff !important;
         font-size: 14px !important;
     }
 
     .navbar.gleeson.sub-site .s-lg-embedded-search-widget button:hover {
         border: 3px solid #FFF !important;
-        background: #FDB330 !important;
-        color: #000 !important;
+        background: #000 !important;
+        color: #FDB330 !important;
     }
 
     .navbar.gleeson.sub-site .dropdown-menu {
@@ -763,6 +763,18 @@ nav.gleeson.navbar {
     .navbar.gleeson.sub-site .main-menu-nav.staff-guides {
         background: #00543C;
     }
+
+    .navbar.gleeson.sub-site .web-gov .s-lg-embedded-search-widget button {
+        background: #000 !important;
+        color: #fff !important;
+    }
+
+    .navbar.gleeson.sub-site .web-gov .s-lg-embedded-search-widget button:hover {
+        background: #FDB330 !important;
+        color: #000 !important;
+    }
+
+
 
 /* TURN HAMBURGER BARS INTO X WHEN MENU IS OPEN
 
