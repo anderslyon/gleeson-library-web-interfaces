@@ -3302,12 +3302,17 @@ span.link-purpose i {
 }
 
 .well.best-practices {
-    border-left: 5px solid #Fdbb30;
-    background: transparent;
+    border-left: 8px solid #FDBB30;
+    background: #FFF8E1;
 }
 
 .well.more-info {
-    border-left: 5px solid #000;
+    border-left: 8px solid #000;
+}
+
+.well.accessibility {
+    border-left: 8px solid #CD542C;
+    background: #FBE9E7;
 }
 
 .well-title {
