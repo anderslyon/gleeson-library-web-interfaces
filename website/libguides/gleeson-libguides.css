@@ -1315,10 +1315,6 @@ a .s-lib-profile-name {
     margin-bottom: 24px;
 }
 
-.guide-list.cards.documentation li:hover {
-    background: #F5F5F5;
-}
-
 @media screen and (min-width: 768px) {
     .guide-list.cards.documentation li {
         flex-basis: calc(50% - 12px);
@@ -1333,6 +1329,13 @@ a .s-lib-profile-name {
     font-size: 20px;
     padding: 20px;
     display: block;
+    background: #F5F5F5;
+    border-radius: 4px 4px 0 0;
+}
+
+.guide-list.cards.documentation li a:hover {
+    background: #00543C;
+    color: #FFF;
 }
 
 @media screen and (min-width: 768px) {
@@ -1347,7 +1350,7 @@ a .s-lib-profile-name {
 
 .guide-list.cards.documentation .s-lg-guide-list-description {
     margin-bottom: 0;
-    padding: 0 20px 20px 20px;
+    padding: 20px;
 }
 
 /* GUIDE LIST LISTS — DOCUMENTATION */
