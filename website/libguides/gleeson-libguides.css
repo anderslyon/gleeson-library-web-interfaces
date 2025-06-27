@@ -1,6 +1,6 @@
 /* GLEESON LIBRARY -- UNIVERSITY OF SAN FRANCISCO */
 /* CUSTOM STYLES USED ON LIBGUIDES (LEGACY) */
-/* Last Edit: 05/28/2025 */
+/* Last Edit: 06/27/2025 */
 
 /* HTML & BODY */
 
@@ -1221,7 +1221,7 @@ a .s-lib-profile-name {
 }
 
 
-/* PANELS & ACCORDIONS — LIBRARY STAFF GUIDES */
+/* PANELS & ACCORDIONS — DOCUMENTATION */
 
 .panel-group .panel.documentation + .panel.documentation {
     /* margin-top: 15px; */
@@ -1294,6 +1294,77 @@ a .s-lib-profile-name {
 
 .panel.documentation a.panel-link i {
     margin-left: 0.625rem;
+}
+
+/* GUIDE LIST CARDS – DOCUMENTATION */
+
+.guide-list.cards.documentation ul {
+    padding-left: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.guide-list.cards.documentation li {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    margin-bottom: 24px;
+}
+
+.guide-list.cards.documentation li:hover {
+    background: #F5F5F5;
+}
+
+@media screen and (min-width: 768px) {
+    .guide-list.cards.documentation li {
+        flex-basis: calc(50% - 12px);
+    }
+}
+
+.guide-list.cards.documentation li a {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    line-height: 1;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px;
+    display: block;
+}
+
+@media screen and (min-width: 768px) {
+    .guide-list.cards.documentation li a {
+        font-size: 28px;
+    }
+}
+
+.guide-list.cards.documentation li a:hover {
+    text-decoration: underline;
+}
+
+.guide-list.cards.documentation .s-lg-guide-list-description {
+    margin-bottom: 0;
+    padding: 0 20px 20px 20px;
+}
+
+/* GUIDE LIST LISTS — DOCUMENTATION */
+
+.guide-list.lists.documentation ul {
+    padding-left: 20px;
+}
+
+.guide-list.lists.documentation a {
+    font-family: 'Fira Sans Extra Condensed';
+    font-weight: 600;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.guide-list.lists.documentation a:hover {
+    text-decoration: underline;
 }
 
 /* BUTTONS */

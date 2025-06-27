@@ -1653,6 +1653,10 @@ https://stackoverflow.com/questions/28247310/bootstrap-mobile-menu-icon-change-t
     padding: 15px;
 }
 
+.s-lib-box-content .alert.library-alert .container {
+    padding: 0;
+}
+
 /* ASK A LIBRARIAN BUTTON */
 
 .ask-a-librarian-component {
