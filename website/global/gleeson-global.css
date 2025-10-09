@@ -2144,7 +2144,7 @@ a.panel-link:hover span.text {
     flex-direction: column;
 }
 
-.panel-card a.panel-link:hover i
+.panel-card a.panel-link:hover i,
 .v-panel-card-image a.panel-link:hover i {
     -webkit-transform: translate3d(0.1875rem, 0, 0);
     transform: translate3d(0.1875rem, 0, 0);
