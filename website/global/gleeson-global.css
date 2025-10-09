@@ -1,6 +1,6 @@
 /* GLEESON LIBRARY -- UNIVERSITY OF SAN FRANCISCO */
 /* CUSTOM GLOBAL STYLES USED ON LIBGUIDES (LEGACY), LIBANSWERS, LIBCAL */
-/* Last Edit: 06/11/2025 */
+/* Last Edit: 10/09/2025 */
 
 /* TYPOGRAPHY */
 
@@ -50,6 +50,10 @@ a:hover {
     color: #00543c;
     -webkit-transition: all 0.1s;
     transition: all 0.1s;
+}
+
+a.black-link {
+    color: #000;
 }
 
 *:focus {
@@ -2091,13 +2095,15 @@ a.panel.v-panel-card-image:hover .panel-title {
     color: #000;
 }
 
-.panel-card .panel-link {
+.panel-card .panel-link,
+.v-panel-card-image .panel-link {
     display: block;
     text-align: right;
     margin-top: 15px;
 }
 
-.panel-card a.panel-link {
+.panel-card a.panel-link,
+.v-panel-card-image a.panel-link {
     color: #000;
     font-size: 1.125rem;
     line-height: 1;
@@ -2130,14 +2136,16 @@ a.panel-link:hover span.text {
     text-decoration: underline;
 }
 
-.panel-card a.panel-link i {
+.panel-card a.panel-link i,
+.v-panel-card-image a.panel-link i {
     margin-left: 0.625rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
-.panel-card a.panel-link:hover i {
+.panel-card a.panel-link:hover i
+.v-panel-card-image a.panel-link:hover i {
     -webkit-transform: translate3d(0.1875rem, 0, 0);
     transform: translate3d(0.1875rem, 0, 0);
     -webkit-transition: -webkit-transform 0.1s ease-in-out;
