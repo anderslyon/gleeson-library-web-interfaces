@@ -2238,6 +2238,78 @@ ul.social-media-links li {
     transition: all 0.1s;
 }
 
+/* STYLES FOR STAFF PROFILE PAGES */
+
+#staff-profile-template h2,
+#staff-profile-template h3,
+#staff-profile-template h4,
+#staff-profile-template h5,
+#staff-profile-template h6 {
+    font-size: 1.625rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+#staff-profile-template .s-lg-system-list > li > a {
+    font-size: 18px;
+}
+
+#staff-profile-template #s-lg-guide-description {
+    font-size: 1.125rem;
+}
+
+#staff-profile-template .s-lg-system-list li {
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+
+@media screen and (min-width: 992px) {
+    #staff-profile-template #s-lg-guide-description {
+        font-size: 2.125rem;
+    }
+
+    #staff-profile-template h2,
+    #staff-profile-template h3,
+    #staff-profile-template h4,
+    #staff-profile-template h5,
+    #staff-profile-template h6 {
+        font-size: 1.875rem;
+    }
+}
+
+#staff-profile-template .s-lg-guide-info-account {
+    display: none;
+}
+
+#staff-profile-template .s-lg-guide-list-info {
+    color: #767676;
+    font-size: 12px;
+    line-height: 1.2;
+}
+
+#staff-profile-template ul.s-lg-system-list {
+    list-style-type: disc;
+    margin-left: 15px;
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+
+#staff-profile-template ul.s-lg-system-list li {
+    list-style-type: none;
+}
+
+#staff-profile-template .research-guides-list .s-lib-box-content {
+    border: 5px solid #FDBB30;
+    padding: 15px;
+}
+
+#staff-profile-template .research-guides-list h2 {
+    position: absolute;
+    top: -15px;
+    background-color: white;
+    padding: 0 15px;
+}
+
 /* HOMEPAGE LAYOUT & TYPOGRAPHY */
 
 #s-lg-guide-homepage {
