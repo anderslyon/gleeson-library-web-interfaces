@@ -122,11 +122,6 @@ nav#gleeson {
     padding: 0;
 }
 
-#gleeson ul.dropdown-menu-right.show {
-    right: 0;
-    left: auto;
-}
-
 #gleeson ul.multi-column-dropdown li {
     padding-top: 7px;
     padding-bottom: 7px;
