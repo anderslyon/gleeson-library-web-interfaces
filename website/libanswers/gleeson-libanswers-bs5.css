@@ -1,0 +1,1052 @@
+/* GLEESON LIBRARY -- UNIVERSITY OF SAN FRANCISCO */
+/* CUSTOM STYLES USED ON LIBANSWERS BS5 */
+/* Last Edit: 10/23/2026 */
+
+/* HEADINGS */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-style: normal;
+    line-height: 1.1;
+    color: #00543C;
+}
+
+h1,
+h1.s-la-public-header-title,
+h1#s-la-public-header-title {
+    font-size: 2.25rem;
+    line-height: 1;
+    font-weight: 600;
+    letter-spacing: -0.03125rem;
+    margin-top: 5px;
+    margin-bottom: 5px
+}
+
+@media screen and (min-width: 768px) {
+
+    h1,
+    h1.s-la-public-header-title,
+    h1#s-la-public-header-title {
+        font-size: 3.375rem;
+        line-height: 1;
+        letter-spacing: 0.025rem;
+    }
+}
+
+h2 {
+    font-size: 2rem;
+    line-height: 1;
+    letter-spacing: 0.0125rem;
+    font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+    h2 {
+        font-size: 3rem;
+        line-height: 1.1667;
+    }
+}
+
+h3,
+.s-la-faq-question h2,
+.s-la-content h2 {
+    font-size: 1.75rem;
+    line-height: 1.1819;
+    font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+
+    h3,
+    .s-la-faq-question h2,
+    .s-la-content h2 {
+        font-size: 2.625rem;
+        line-height: 1.0556;
+    }
+}
+
+
+h4 {
+    font-size: 1.5rem;
+    line-height: 1.4445;
+    font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+    h4 {
+        font-size: 2.25rem;
+        line-height: 0.9445;
+    }
+}
+
+h5,
+.s-la-faq-question h3 {
+    font-size: 1.25rem;
+    line-height: 1.4546;
+    font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+
+    h5,
+    .s-la-faq-question h3 {
+        font-size: 1.875rem;
+        line-height: 1.0667;
+    }
+}
+
+
+h6 {
+    font-size: 1.125rem;
+    line-height: 1.5556;
+    letter-spacing: 0.01875rem;
+    font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+    h6 {
+        font-size: 1.5rem;
+        line-height: 1.3334;
+    }
+}
+
+.h1, .h2, .h3, h1, h2, h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* PARAGRAPH TEXT & LISTS */
+
+a {
+    color: #00543C;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+p,
+li,
+table {
+    font-size: 0.875rem;
+    line-height: 1.625;
+    word-break: break-word;
+}
+
+@media screen and (min-width: 768px) {
+    p,
+    li {
+        font-size: 1rem;
+    }
+}
+
+ul,
+ol {
+    margin-top: 0;
+}
+
+ul ul,
+ul ol,
+ol ul,
+ol ol {
+    margin-bottom: 0;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+/* TABLES */
+
+table,
+table p {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-size: 20px;
+    line-height: 1;
+}
+
+.table > thead > tr > th {
+    white-space: nowrap;
+}
+
+.table > tbody > tr > td,
+.table > tbody > tr > th,
+.table > tfoot > tr > td,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > thead > tr > th {
+    padding: 15px;
+}
+
+td img {
+    margin-left: 0 !important;
+    margin-right: 10px !important;
+}
+
+/* IMAGES */
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+/* LAYOUT, PADDING, MARGINS */
+
+@media (min-width: 768px) {
+    .s-la-page-home .col-md-8,
+    .s-la-page-home .col-md-4 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    .s-la-page-home .col-md-8 {
+        flex: 0 0 auto;
+        width: 66.66666667%;
+    }
+    .s-la-page-home .col-md-4 {
+        flex: 0 0 auto;
+        width: 33.33333333%;
+    }
+}
+
+/* LIBANSWERS LAYOUT */
+
+.s-la-header {
+    padding: 0;
+}
+
+.s-la-public-header-text,
+.s-la-public-header-text .s-la-public-home {
+    text-align: left !important;
+    margin-bottom: 0;
+}
+
+@media screen and (min-width: 992px) {
+    .s-la-page-home #s-la-page-column-1 {
+        padding-right: 40px;
+    }
+}
+
+.s-la-page-home #s-la-page-maincontent,
+.s-la-page-public #s-la-page-title-bar,
+.s-la-page-single #s-la-page-title-bar,
+.s-la-page-tabbed #s-la-page-title-bar {
+    padding-top: 30px;
+}
+
+.s-la-content {
+    margin: 0;
+}
+
+.s-la-box-container {
+    margin: 0;
+}
+
+/* LIBANSWERS BREADCRUMBS */
+
+#s-la-bc .breadcrumb {
+    background: transparent;
+    padding: 1.25rem 0;
+    margin: 0;
+    font-size: 11px;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+#s-la-bc .breadcrumb li,
+#s-la-bc .breadcrumb a {
+    font-size: 0.75rem;
+    line-height: 1;
+    color: #737373;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+}
+
+#s-la-bc .breadcrumb a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    padding: 0 0.375rem;
+    color: #000;
+    font-family: FontAwesome;
+    content: "\f054";
+    font-size: 0.5rem;
+    vertical-align: middle;
+}
+
+@media screen and (min-width: 768px) {
+    .breadcrumb-item+.breadcrumb-item::before {
+        padding: 0 0.75rem;
+    }
+}
+
+#s-la-bc .breadcrumb > .active {
+    color: #000;
+}
+
+/* LIBANSWERS HEADER DESCRIPTION */
+
+.s-la-public-header-description {
+    margin: 0;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    line-height: 1.2;
+    font-weight: 400;
+    font-size: 1.125rem;
+    color: #00543C;
+}
+
+@media screen and (min-width: 768px) {
+    .s-la-public-header-description {
+        font-size: 1.5rem;
+    }
+}
+
+.s-la-public-header-description p {
+    font-size: 0.875rem;
+    font-family: 'IBM Plex Serif', serif;
+    font-weight: 400;
+    color: #000;
+    margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .s-la-public-header-description p {
+        font-size: 1rem;
+    }
+}
+
+/* HIDE FAQ SEARCH ON ASK A LIBRARIAN HOMEPAGE */
+
+.s-la-page-home #s-la-page-title-bar {
+    display: none;
+}
+
+/* LIBANSWERS BOX STYLE */
+
+.s-la-box-borderless {
+    border-width: 0;
+    padding: 0;
+}
+
+.s-la-box {
+    padding-bottom: 40px;
+}
+
+/* LIBANSWERS LIBRARYH3LP CHAT BOX */
+
+.libraryh3lp h3 {
+    font-size: 18px;
+}
+
+@media screen and (min-width: 768px) {
+    .libraryh3lp h3 {
+        font-size: 24px;
+    }
+}
+
+.libraryh3lp iframe {
+    max-width: 550px !important;
+    width: 100% !important;
+}
+
+/* LIBANSWERS TABS */
+
+.s-la-box-content .nav-tabs {
+    justify-content: space-evenly;
+}
+
+.s-la-box-content .nav-tabs > li {
+    margin-bottom: -1px;
+    flex-basis: calc(50% - 30px);
+}
+
+.s-la-box-content .nav-tabs > li > a {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #00543C;
+    border: 1px solid #00543C;
+    border-radius: 0;
+    text-decoration: none;
+    text-align: center;
+    padding: 8px 16px;
+}
+
+.nav-tabs .nav-item.show .nav-link, 
+.nav-tabs .nav-link.active {
+    border: 1px solid #00543C;
+    border-bottom-color: transparent;
+    cursor: default;
+    color: #FFF;
+    background: #00543C;
+}
+
+.tab-content {
+    border: #00543C solid 1px;
+}
+
+.tab-content > .active {
+    margin-top: 0;
+}
+
+.s-la-content-faqlist ul {
+    padding: 20px;
+    margin: 0;
+}
+
+.s-la-content-faqlist li.s-la-faq-listing {
+    border-bottom: 1px solid #FDBB30;
+}
+
+.s-la-faq-listing-q {
+    font-weight: 400;
+    font-size: 20px;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.s-la-faq-listing-q a {
+    color: #00543C;
+    text-decoration: none;
+}
+
+.s-la-faq-listing-q a:hover {
+    color: #00543C;
+    text-decoration: underline;
+}
+
+.s-la-faq-listing-details {
+    display: none;
+}
+
+.s-la-faq-listing-meta {
+    font-size: 12px;
+}
+
+.s-la-faq-listing-meta .metalabel {
+    font-weight: 500;
+}
+
+@media (max-width: 767px) {
+span.s-srch-result-subj {
+    display: block;
+}
+}
+
+button#s-srch-sort-0-btn {
+    border-radius: 0;
+}
+
+.s-srch-range .dropdown-menu {
+    border-radius: 0;
+    box-shadow: 0 0 0.375rem 0 rgb(0 0 0 / 25%);
+    -webkit-box-shadow: 0 0 0.375rem 0 rgb(0 0 0 / 25%);
+}
+
+.badge {
+    border-radius: 0;
+    text-transform: uppercase;
+    background-color: #AED136;
+    color: #000;
+}
+
+.s-srch-params {
+    border-radius: 0;
+    padding: 5px 10px;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+}
+
+/* LIBANSWERS FAQ SEARCH BOXES */
+
+.form-control {
+    border-radius: 0;
+}
+
+input.form-control {
+    height: 50px;
+}
+
+#s-la-page-title-bar .s-la-content-search-query {
+    border-color: #ccc;
+}
+
+button.btn.btn-primary.s-la-searchform-button,
+button.btn.btn-default.s-la-searchform-button {
+    color: #fff;
+    background-color: #00543c;
+    border-radius: 0;
+    padding: 10px 20px;
+    font-size: 14px;
+    height: 50px;
+    border: 1px solid #00543c;
+}
+
+button.btn.btn-primary.s-la-searchform-button:hover,
+button.btn.btn-default.s-la-searchform-button:hover {
+    color: #00543c;
+    background-color: #fff;
+}
+
+#s-la-page-title-bar .navbar {
+    border-radius: 0;
+    padding: 15px !important;
+    background-color: #fff;
+    box-shadow: 0 0 0.375rem rgb(0 0 0 / 25%);
+    -webkit-box-shadow: 0 0 0.375rem rgb(0 0 0 / 25%);
+}
+
+@media screen and (min-width: 768px) {
+#s-la-page-title-bar .navbar {
+    padding: 30px 18px !important;
+}
+}
+
+.s-la-navbrowse {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    border-radius: 0;
+    margin: 20px 0 0 0;
+}
+
+@media screen and (min-width: 768px) {
+.s-la-navbrowse {
+    align-items: center;
+    height: 50px;
+}
+}
+
+#s-la-browsebar-collapse form {
+    margin-right: 0 !important;
+}
+
+ul.nav.navbar-nav.s-la-navbrowse {
+    justify-content: center;
+}
+
+.navbar-nav.s-la-navbrowse>li>a {
+    line-height: 1.625;
+    color: #00543C;
+    font-size: 1rem;
+}
+
+.navbar-nav.s-la-navbrowse>li>a:hover {
+    text-decoration: underline;
+}
+
+#s-la-browsebar-collapse {
+    justify-content: space-between;
+}
+
+#s-la-browse-groups .dropdown-menu {
+    border: 0;
+}
+
+@media (min-width: 768px) {
+    #s-la-browse-groups .dropdown-menu {
+        position: absolute;
+        right: 0;
+        left: auto;
+        border-radius: 0;
+        box-shadow: 0 0 0.375rem 0 rgb(0 0 0 / 25%);
+        -webkit-box-shadow: 0 0 0.375rem 0 rgb(0 0 0 / 25%);
+    }
+}
+
+.s-la-content-search {
+    flex-basis: 66.66667%;
+    flex-grow: unset !important;
+    margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+.s-la-content-search,
+.s-la-navbrowse {
+    margin-top: 0;
+}
+}
+
+.s-la-faq-action-bar .navbar {
+    border-radius: 0;
+}
+
+.s-la-faq-action-bar .navbar-brand {
+    font-family: 'Fira Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #00543c;
+}
+
+#s-la-faq-tweetlink .nav-link .fa {
+    font-size: 1.5rem;
+    padding: 0;
+}
+
+/* LIBANSWERS SEARCH RESULTS PAGE */
+
+.s-srch-top-header {
+    color: #000;
+    font-size: 1.5rem;
+    line-height: 1;
+    letter-spacing: -0.00937rem;
+    font-weight: 500;
+}
+
+@media screen and (min-width: 992px) {
+    #s-srch-results-container .col-md-9 {
+        padding-right: 40px;
+    }
+}
+
+.s-srch-header, 
+.s-srch-pagination {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+}
+
+.s-srch-range {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+
+.s-srch-result {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 0.125rem solid #FDBB30;
+    position: relative;
+    font-size: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    .s-srch-result {
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+.s-srch-result-title {
+    margin-bottom: 10px;
+}
+
+.s-srch-result-title a {
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    text-decoration: none;
+    line-height: 1.25;
+    color: #00543C;
+}
+
+@media screen and (min-width: 768px) {
+    .s-srch-result-title a {
+        font-size: 1.875rem;
+        line-height: 1.333;
+    }
+}
+
+.s-srch-result-title a:focus,
+.s-srch-result-title a:hover {
+    text-decoration: underline;
+}
+
+.s-srch-result-meta {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+}
+
+.s-srch-askbutton .alert {
+    border-radius: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.s-srch-askbutton a.btn.btn-primary {
+    border-radius: 0;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.page-item:first-child .page-link, 
+.page-item:last-child .page-link {
+    border-radius: 0 !important;
+}
+
+.page-link {
+    color: #00543C;
+    font-weight: 700;
+}
+
+.active>.page-link, 
+.page-link.active {
+    background-color: #00543C;
+    border-color: #00543C;
+}
+
+.page-link:hover {
+    color: #00543C;
+    border-color: #00543C;
+}
+
+.page-item.active a.page-link:hover {
+    background: #f9f8fa;
+}
+
+/* LIBANSWERS FAQ PAGE */
+
+.s-la-faq-answer {
+    margin-bottom: 30px;
+}
+
+.s-la-faq-updated,
+.s-la-faq-views, 
+#s-la-vote,
+#editlink {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+}
+
+#editlink a.nav-link {
+    font-size: 1rem;
+    color: #00543C;
+}
+
+#editlink a.nav-link:hover {
+    text-decoration: underline;
+}
+
+/* SYSTEM STATUS */
+
+.s-la-product-div,
+.s-la-productfolder-div {
+    border-radius: 0;
+    min-height: 60px;
+}
+
+.s-la-product-div a,
+.s-la-productfolder-div a {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: #00543C;
+    line-height: 1.2;
+}
+
+.s-la-product-status.badge {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-size: 1rem;
+}
+
+.s-la-filterform .form-select,
+.s-la-filterform .btn-primary {
+    border-radius: 0;
+}
+
+.s-la-filterform label {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+}
+
+.s-la-filterform .btn-primary {
+    font-family: 'Fira Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: #00543C;
+    border-color: #00543C;
+}
+
+.s-la-filterform .btn-primary:hover {
+    background-color: #FFF;
+    color: #00543C;
+}
+
+#s-la-product-select .form-select,
+#s-la-product-select .btn.btn-default {
+    Border-radius: 0;
+}
+
+.s-la-product-div > a,
+.s-la-productfolder-div > a {
+    text-decoration: none;
+}
+
+.s-la-product-div > a:focus,
+.s-la-product-div > a:hover,
+.s-la-productfolder-div > a:focus,
+.s-la-productfolder-div > a:hover {
+    text-decoration: underline;
+}
+
+.s-la-page-systems .tab-content {
+    padding: 20px;
+}
+
+ul#s-la-product-tabs li:nth-child(2) {
+    display: none;
+}
+
+button#s-la-idea-submit {
+    display: none;
+}
+
+.s-la-post-date {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-weight: 600;
+    font-size: 1.125rem;
+    color: #000;
+}
+
+.s-la-post-title {
+    font-size: 1.5rem;
+    margin-top: 7px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    line-height: 1.2084;
+}
+
+@media screen and (min-width: 768px) {
+    .s-la-post-title {
+        font-size: 1.875rem;
+    }
+}
+
+.s-la-post-system {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.s-la-post-labels {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+}
+
+.label {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    text-transform: uppercase;
+    padding: 0.2em 0.6em;
+    border-radius: 0;
+}
+
+ul#s-la-product-tabs {
+    border-bottom: 2px solid #00543C;
+}
+
+ul#s-la-product-tabs > li {
+    margin-bottom: 0;
+}
+
+#s-la-filterform {
+    margin: 30px 0 30px 0;
+}
+
+.s-la-idea-list > li,
+.s-la-post-list > li {
+    border-bottom: 0.125rem solid #FDBB30;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.s-la-page-systems .s-la-filterform {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+    -webkit-box-shadow: 0 0 0.375rem 0 rgb(0 0 0 / 25%);
+    box-shadow: 0 0 0.375rem 0 rgb(0 0 0 / 25%);
+}
+
+form#s-la-filterform {
+    background-color: #fff;
+    padding: 20px !important;
+    border-radius: 0;
+    margin: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+@media (max-width: 767px) {
+    form#s-la-filterform .col-12.row.mb-2 {
+        width: 100%;
+    }
+}
+
+label.control-label {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    line-height: 1.3125;
+}
+
+.s-la-posts-rss {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-weight: 600;
+    display: flex;
+    justify-content: end;
+    margin: 10px 10px 0 0;
+}
+
+.s-la-productfolder-name {
+    font-size: 2rem;
+    border-bottom: none;
+}
+
+@media screen and (min-width: 768px) {
+    .s-la-productfolder-name {
+        font-size: 3rem;
+    }
+}
+
+.s-la-page-systems .s-la-public-header-text {
+    margin-bottom: 40px;
+}
+
+.s-la-page-systems h1#s-la-public-header-title {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+h1#s-la-public-header-title .s-la-product-status.badge {
+    margin-left: 10px;
+}
+
+.s-la-public-header-text .pull-right {
+    display: none;
+}
+
+.s-la-product-url {
+    padding-top: 30px;
+}
+
+.s-la-page-systems .modal-content,
+.s-la-page-systems .btn-light {
+    border-radius: 0;
+}
+
+.nav-tabs > li > a {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #00543c;
+    text-decoration: none;
+}
+
+/* BUTTONS */
+
+.btn-cta {
+    font-size: 1.125rem;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 700;
+    min-height: 50px;
+    padding-left: 32px;
+    padding-right: 32px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    -webkit-transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+    transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+    border: 2px solid #FDBB30;
+    border-radius: 0;
+    -webkit-box-shadow: inset 0 0 0 0 #fdbb30;
+    box-shadow: inset 0 0 0 0 #fdbb30;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.btn-cta:hover {
+    -webkit-transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+    transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+    background-color: #FFF;
+    color: #000;
+    border-color: #FDBB30;
+    border-width: 0.125rem;
+    text-decoration: none;
+    -webkit-box-shadow: inset 0 0 0 0.1875rem #fdbb30;
+    box-shadow: inset 0 0 0 0.1875rem #fdbb30;
+    -webkit-transition: all 0.1s;
+    transition: all 0.1s;
+}
+
+/* POPOVERS */
+
+.popover {
+    font-family: 'IBM Plex Serif', serif;
+    border-radius: 0;
+    font-size: 16px;
+}
+
+.popover-header {
+    color: #000;
+    font-size: 14px;
+}
+
+.popover-body {
+    color: #000;
+}
+
+/* LIBANSWERS FOOTER */
+
+#s-la-public-footer {
+    background-color: #fff;
+}
+
+.s-la-footer {
+    text-align: right;
+    padding: 10px 0;
+    border-top: 0.0625rem solid #FDBB30;
+    z-index: 5;
+    font-size: 0.875rem;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    margin-top: 50px;
+    background-color: transparent;
+}
+
+#s-la-footer-brand {
+    display: none;
+}
+
+/* FAQs STYLE UPDATES */
+
+button.s-srch-facet-btn {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #00543C !important;
+}
+
+.s-srch-facet label, .s-srch-facet li {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-weight: normal;
+}
+
+.s-la-color-bars .s-la-navbrowse .navbar-text {
+    color: #919194;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+button.btn.btn-primary.s-la-searchform-button, button.btn.btn-default.s-la-searchform-button {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
